@@ -8,22 +8,59 @@
               <div class="footer-widget footer-widget__contact">
                 <h2 class="footer-widget__title">Courses</h2>
                 <!-- /.footer-widget__title -->
-                <ul class="list-unstyled footer-widget__course-list">
+                <ul class="list-unstyled footer-widget__link-list">
                   <li>
-                    <h2>
-                      <a href="course-details.html">Introduction Web Design</a>
-                    </h2>
-                    <p>Mike Hardson</p>
+                    <nuxt-link
+                      :to="{
+                        name: 'course-details',
+                        params: { id: '1' },
+                      }"
+                    >
+                      <p>SBI Clerk</p></nuxt-link
+                    >
                   </li>
                   <li>
-                    <h2>
-                      <a href="course-details.html">
-                        Learning MBA Management
-                      </a>
-                    </h2>
-                    <p>Jessica Brown</p>
+                    <nuxt-link
+                      :to="{
+                        name: 'course-details',
+                        params: { id: '2' },
+                      }"
+                    >
+                      <p>IBPS-PO</p></nuxt-link
+                    >
+                  </li>
+                  <li>
+                    <nuxt-link
+                      :to="{
+                        name: 'course-details',
+                        params: { id: '2' },
+                      }"
+                    >
+                      <p></p
+                    ></nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link
+                      :to="{
+                        name: 'course-details',
+                        params: { id: '3' },
+                      }"
+                    >
+                      <p>IBPS Clerk</p></nuxt-link
+                    >
+                  </li>
+                  <li>
+                    <nuxt-link
+                      :to="{
+                        name: 'course-details',
+                        params: { id: '4' },
+                      }"
+                    >
+                      <p>SBI PO</p></nuxt-link
+                    >
                   </li>
                 </ul>
+
                 <!-- /.footer-widget__course-list -->
               </div>
               <!-- /.footer-widget -->
@@ -36,10 +73,10 @@
                 <div class="footer-widget__link-wrap">
                   <ul class="list-unstyled footer-widget__link-list">
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Teachers</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Our News</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="#">Test Series</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="/news">Blog</a></li>
                   </ul>
                   <!-- /.footer-widget__link-list -->
                   <ul class="list-unstyled footer-widget__link-list">
@@ -56,40 +93,17 @@
             <!-- /.col-lg-3 -->
             <div class="col-xl-3 col-lg-6 col-sm-12">
               <div class="footer-widget footer-widget__gallery">
-                <h2 class="footer-widget__title">Gallery</h2>
+                <h2 class="footer-widget__title">App Store</h2>
                 <!-- /.footer-widget__title -->
-                <ul class="list-unstyled footer-widget__gallery-list">
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-1.png" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-2.png" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-3.png" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-4.png" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-5.png" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="/assets/images/footer-1-6.png" alt=""
-                    /></a>
-                  </li>
-                </ul>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.saraswati.trigrexam"
+                >
+                  <img
+                    src="/assets/images/playstore.png"
+                    class="footer-playstore"
+                  />
+                </a>
+                <ul class="list-unstyled footer-widget__gallery-list"></ul>
                 <!-- /.footer-widget__gallery -->
               </div>
               <!-- /.footer-widget -->
@@ -100,8 +114,8 @@
                 <h2 class="footer-widget__title">About</h2>
                 <!-- /.footer-widget__title -->
                 <p class="footer-widget__text">
-                  Lorem ipsum dolor sit ametcon, sectetur adipiscing elit.
-                  Phasellus vehic sagittis euismod.
+                  Saraswati World of Banking Education - Get the 'Star Banker of
+                  India' tag to Start your star performance.
                 </p>
                 <!-- /.footer-widget__text -->
                 <div class="footer-widget__btn-block">
@@ -175,4 +189,7 @@ export default {
 </script>
 
 <style scoped>
+.footer-playstore {
+  max-width: 14rem;
+}
 </style>
