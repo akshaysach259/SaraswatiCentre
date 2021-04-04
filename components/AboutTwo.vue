@@ -1,6 +1,9 @@
 <template>
   <section class="about-two">
     <div class="container">
+      <modal name="my-first-modal">
+        <img class="moadalImg" src="/assets/images/modalimg.png" />
+      </modal>
       <div class="row">
         <div class="col-xl-6">
           <div class="about-two__content">
@@ -81,6 +84,40 @@
 <script>
 export default {
   name: "AboutTwo",
+  data() {
+    return {
+      showModal: true,
+    };
+  },
+  mounted() {
+    this.show();
+  },
+  methods: {
+    getCookie() {
+      const cookieValue = document.cookie
+        .split(";")
+        .map((cookie) => cookie.split("="))
+        .reduce(
+          (accumulator, [key, value]) => ({
+            ...accumulator,
+            [key.trim()]: decodeURIComponent(value),
+          }),
+          {}
+        );
+      this.showModal = cookieValue.modalShow;
+      console.log(cookieValue.modalShow);
+    },
+    show() {
+      if (this.showModal) {
+        this.$modal.show("my-first-modal");
+        document.cookie = "modalShow=false";
+        this.hide();
+      }
+    },
+    hide() {
+      this.$modal.hide("my-first-modal");
+    },
+  },
 };
 </script>
 
