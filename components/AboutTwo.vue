@@ -53,7 +53,8 @@
               <!-- /.about-two__single -->
             </div>
             <!-- /.about-two__single-wrap -->
-            <a href="#" class="thm-btn">Learn More</a
+            <a href="https://saraswati.trigrexam.com/" class="thm-btn"
+              >Learn More</a
             ><!-- /.thm-btn -->
           </div>
           <!-- /.about-two__content -->

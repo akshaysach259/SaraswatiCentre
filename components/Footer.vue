@@ -119,9 +119,10 @@
                 </p>
                 <!-- /.footer-widget__text -->
                 <div class="footer-widget__btn-block">
-                  <a href="#" class="thm-btn">Contact</a
+                  <a href="/contact" class="thm-btn">Contact</a
                   ><!-- /.thm-btn -->
-                  <a href="#" class="thm-btn">Purchase</a
+                  <a href="https://saraswati.trigrexam.com/" class="thm-btn"
+                    >Purchase</a
                   ><!-- /.thm-btn -->
                 </div>
                 <!-- /.footer-widget__btn-block -->
@@ -147,10 +148,24 @@
               class="scroll-to-target site-footer__scroll-top"
               ><i class="kipso-icon-top-arrow"></i
             ></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/SBIPOcoaching" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/saraswaticen/?r=nametag"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
           </div>
           <!-- /.site-footer__social -->
           <!-- /.site-footer__copy -->

@@ -11,7 +11,8 @@
       </h2>
       <!-- /.cta-one__title -->
       <div class="cta-one__btn-block">
-        <a href="#" class="thm-btn cta-one__btn">Learn More</a
+        <a href="https://saraswati.trigrexam.com/" class="thm-btn cta-one__btn"
+          >Learn More</a
         ><!-- /.thm-btn -->
       </div>
       <!-- /.cta-one__btn-block -->

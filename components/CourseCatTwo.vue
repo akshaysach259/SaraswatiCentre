@@ -7,26 +7,27 @@
           <div class="item">
             <div class="course-category-two__single color-1">
               <div class="course-category-two__icon">
-                <i class="kipso-icon-desktop"></i
-                ><!-- /.kipso-icon-camera -->
+                <img
+                  src="/assets/images/icons/sbi.png"
+                /><!-- /.kipso-icon-camera -->
               </div>
               <!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">Banking</a>
+                <a href="#">SBI Clerk</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div>
             <!-- /.course-category-two__single -->
           </div>
-          <!-- /.item -->
           <div class="item">
-            <div class="course-category-two__single color-2">
+            <div class="course-category-two__single color-4">
               <div class="course-category-two__icon">
-                <i class="kipso-icon-web-programming"></i
-                ><!-- /.kipso-icon-camera -->
+                <img src="/assets/images/icons/ibps.png" />
               </div>
               <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">SSC</a></h3>
+              <h3 class="course-category-two__title">
+                <a href="#">IBPS Clerk</a>
+              </h3>
               <!-- /.course-category-two__title -->
             </div>
             <!-- /.course-category-two__single -->
@@ -35,11 +36,41 @@
           <div class="item">
             <div class="course-category-two__single color-3">
               <div class="course-category-two__icon">
-                <i class="kipso-icon-music-player"></i
-                ><!-- /.kipso-icon-camera -->
+                <img
+                  src="/assets/images/icons/sbi.png"
+                /><!-- /.kipso-icon-camera -->
               </div>
               <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">UPSC</a></h3>
+              <h3 class="course-category-two__title"><a href="#">SBI PO</a></h3>
+              <!-- /.course-category-two__title -->
+            </div>
+            <!-- /.course-category-two__single -->
+          </div>
+          <!-- /.item -->
+          <div class="item">
+            <div class="course-category-two__single color-3">
+              <div class="course-category-two__icon">
+                <img
+                  src="/assets/images/icons/ibps.png"
+                /><!-- /.kipso-icon-camera -->
+                <!-- /.kipso-icon-camera -->
+              </div>
+              <!-- /.course-category-two__icon -->
+              <h3 class="course-category-two__title">
+                <a href="#">IBPS PO</a>
+              </h3>
+              <!-- /.course-category-two__title -->
+            </div>
+            <!-- /.course-category-two__single -->
+          </div>
+          <div class="item">
+            <div class="course-category-two__single color-5">
+              <div class="course-category-two__icon">
+                <img src="/assets/images/icons/gdpi.png" />
+                <!-- /.kipso-icon-camera -->
+              </div>
+              <!-- /.course-category-two__icon -->
+              <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
               <!-- /.course-category-two__title -->
             </div>
             <!-- /.course-category-two__single -->
@@ -48,12 +79,11 @@
           <div class="item">
             <div class="course-category-two__single color-4">
               <div class="course-category-two__icon">
-                <i class="kipso-icon-camera"></i
-                ><!-- /.kipso-icon-camera -->
+                <img src="/assets/images/icons/ibps.png" />
               </div>
               <!-- /.course-category-two__icon -->
               <h3 class="course-category-two__title">
-                <a href="#">Banking</a>
+                <a href="#">IBPS Clerk</a>
               </h3>
               <!-- /.course-category-two__title -->
             </div>
@@ -63,56 +93,17 @@
           <div class="item">
             <div class="course-category-two__single color-5">
               <div class="course-category-two__icon">
-                <i class="kipso-icon-targeting"></i
-                ><!-- /.kipso-icon-camera -->
+                <img src="/assets/images/icons/gdpi.png" />
+                <!-- /.kipso-icon-camera -->
               </div>
               <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">SSC</a></h3>
+              <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
               <!-- /.course-category-two__title -->
             </div>
             <!-- /.course-category-two__single -->
           </div>
           <!-- /.item -->
-          <div class="item">
-            <div class="course-category-two__single color-6">
-              <div class="course-category-two__icon">
-                <i class="kipso-icon-health"></i
-                ><!-- /.kipso-icon-camera -->
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title">
-                <a href="#">English</a>
-              </h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
-          <!-- /.item -->
-          <div class="item">
-            <div class="course-category-two__single color-1">
-              <div class="course-category-two__icon">
-                <i class="kipso-icon-desktop"></i
-                ><!-- /.kipso-icon-camera -->
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">Other</a></h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
-          <!-- /.item -->
-          <div class="item">
-            <div class="course-category-two__single color-2">
-              <div class="course-category-two__icon">
-                <i class="kipso-icon-web-programming"></i
-                ><!-- /.kipso-icon-camera -->
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">Other</a></h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
+
           <!-- /.item -->
 
           <!-- /.item -->
@@ -131,7 +122,7 @@ export default {
   name: "CourseCatTwo",
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "http://18.219.9.26:1337",
       MarqueeText: "",
       Link: "",
       courses: null,
@@ -143,7 +134,7 @@ export default {
   },
   methods: {
     async loadMarqueeText() {
-      axios.get(this.URL + "/Moving-Texts").then((response) => {
+      axios.get(this.URL + "/Marquees").then((response) => {
         this.MarqueeText = response.data[0].Text;
         this.Link = response.data[0].Link;
       });

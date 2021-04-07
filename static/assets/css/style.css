@@ -3308,14 +3308,11 @@ a:visited {
 .course-details__comment {
   margin-left: -50px;
   margin-right: -50px;
-  border-top: 2px solid #f1f1f1;
   border-bottom: 2px solid #f1f1f1;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .course-details__comment-top, .course-details__comment-meta {
   display: -webkit-box;
@@ -4271,7 +4268,7 @@ a:visited {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  background-image: url(../images/inner-bg-1-1.jpg);
+  background-image: url(../images/courses-img.png);
 }
 .inner-banner::before {
   content: '';

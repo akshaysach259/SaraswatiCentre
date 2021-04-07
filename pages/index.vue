@@ -6,7 +6,7 @@
     <AboutTwo />
     <CourseOne />
     <CountdownOne />
-    <BannerThree />
+    <BannerThreeSecond />
     <BlogCarousel />
     <!-- <CourseCategory /> -->
     <Testimonial />
@@ -17,6 +17,7 @@
 <script>
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
+import BannerThreeSecond from "../components/BannerThreeSecond";
 import AboutTwo from "../components/AboutTwo";
 import BannerThree from "../components/BannerThree";
 import CourseCatTwo from "../components/CourseCatTwo";
@@ -38,6 +39,7 @@ export default {
     Footer,
     NavOne,
     CourseCategory,
+    BannerThreeSecond,
     AboutTwo,
     BannerThree,
     CourseOne,

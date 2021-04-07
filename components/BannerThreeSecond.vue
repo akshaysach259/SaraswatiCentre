@@ -1,18 +1,9 @@
 <template>
   <section class="slider-three">
-    <img
-      src="/assets/images/slider-3-icon-1-2.png"
-      class="slider-three__icon-2"
-      alt=""
-    />
-    <img
-      src="/assets/images/slider-3-icon-1-3.png"
-      class="slider-three__icon-3"
-      alt=""
-    />
     <div class="container desktop-view">
       <!-- /.row -->
     </div>
+
     <!-- /.container -->
   </section>
 </template>
@@ -37,7 +28,7 @@ export default {
     async loadImages() {
       if (screen.width > 500) {
         axios
-          .get(`${this.URL}/carousel-heads`)
+          .get(`${this.URL}/carousel-banners`)
           .then((response) => {
             const carouselData = response.data;
             carouselData.forEach((carousel) => {
