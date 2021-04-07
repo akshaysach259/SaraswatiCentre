@@ -174,5 +174,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.moadalImg {
+  width: 100%;
+  height: auto;
+}
 </style>

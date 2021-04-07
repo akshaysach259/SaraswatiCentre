@@ -27,7 +27,6 @@ export default {
         sizes: "16x16",
         href: "/assets/images/favicons/favicon-16x16.png"
       },
-
       {
         rel: "stylesheet",
         href:
@@ -78,7 +77,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/axios.js"],
+  plugins: ["~/plugins/axios.js", "~plugins/vue-js-modal.js"],
   /*
    ** Nuxt.js dev-modules
    */
