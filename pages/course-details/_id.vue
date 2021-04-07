@@ -7,10 +7,10 @@
   </div>
 </template>
 <script>
-import PageHeader from "../components/PageHeader";
-import NavOne from "../components/NavOne";
-import Footer from "../components/Footer";
-import CourseDetails from "../components/CourseDetails";
+import PageHeader from "../../components/PageHeader";
+import NavOne from "../../components/NavOne";
+import Footer from "../../components/Footer";
+import CourseDetails from "../../components/CourseDetails";
 import axios from "axios";
 export default {
   data() {

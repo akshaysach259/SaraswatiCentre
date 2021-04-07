@@ -343,7 +343,7 @@ export default {
   name: "CourseOne",
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "http://18.219.9.26:1337",
       courses: [],
     };
   },

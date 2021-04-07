@@ -7,10 +7,10 @@
   </div>
 </template>
 <script>
-import PageHeader from "../components/PageHeader";
-import NavOne from "../components/NavOne";
-import Footer from "../components/Footer";
-import NewsDetails from "../components/NewsDetails";
+import PageHeader from "../../components/PageHeader";
+import NavOne from "../../components/NavOne";
+import Footer from "../../components/Footer";
+import NewsDetails from "../../components/NewsDetails";
 import axios from "axios";
 export default {
   components: { NewsDetails, Footer, NavOne, PageHeader },
