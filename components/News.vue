@@ -6,13 +6,13 @@
           <div class="blog-one__single">
             <div class="blog-one__image">
               <img
-                :src="'http://localhost:1337' + blog.Image370X370.url"
+                :src="'http://18.219.9.26:1337' + blog.Image370X370.url"
                 alt=""
               />
               <nuxt-link
                 class="blog-one__plus"
                 :to="{
-                  name: 'news-details',
+                  name: 'news-details-id',
                   params: { id: blog.id },
                 }"
                 ><i class="kipso-icon-plus-symbol"></i>
@@ -25,7 +25,7 @@
               <h2 class="blog-one__title">
                 <nuxt-link
                   :to="{
-                    name: 'news-details',
+                    name: 'news-details-id',
                     params: { id: blog.id },
                   }"
                   >{{ blog.Title }}</nuxt-link
@@ -39,7 +39,7 @@
 
               <nuxt-link
                 :to="{
-                  name: 'news-details',
+                  name: 'news-details-id',
                   params: { id: blog.id },
                 }"
                 ><a href="#" class="blog-one__link">Read More</a></nuxt-link
@@ -78,7 +78,7 @@ export default {
   name: "News",
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "http://18.219.9.26:1337",
       blogs: [],
     };
   },
@@ -94,7 +94,6 @@ export default {
           data.forEach((element) => {
             this.blogs.push(element);
           });
-          console.log(this.blogs);
         })
         .catch((error) => {
           console.log(error);

@@ -50,7 +50,7 @@
               <!-- /.course-one__meta -->
               <nuxt-link
                 :to="{
-                  name: 'course-details',
+                  name: 'course-details-id',
                   params: { id: course.id },
                 }"
                 ><a href="#" class="course-one__link">See Preview</a></nuxt-link

@@ -87,7 +87,7 @@
                   <li v-for="course in courses" :key="course.id">
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
+                        name: 'course-details-id',
                         params: { id: course.id },
                       }"
                       >{{ course.Title }}</nuxt-link
