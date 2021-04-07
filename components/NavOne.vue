@@ -8,7 +8,31 @@
         </div>
         <!-- /.topbar-one__left -->
         <div class="topbar-one__right">
-          <a href="#Register">Register</a>
+          <div class="header__social">
+            <a href="https://twitter.com/SBIPOcoaching" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/saraswaticen/?r=nametag"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
         </div>
         <!-- /.topbar-one__right -->
       </div>
@@ -28,12 +52,7 @@
                 alt="Awesome Image"
               />
             </a>
-            <div class="header__social">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+
             <!-- /.header__social -->
             <button class="menu-toggler" data-target=".main-navigation">
               <span class="kipso-icon-menu"></span>
@@ -78,11 +97,11 @@
                 <!-- /.sub-menu -->
               </li>
               <li>
-                <nuxt-link to="/courses">Test Series</nuxt-link>
+                <a href="https://saraswati.trigrexam.com/">Test Series</a>
                 <!-- /.sub-menu -->
               </li>
               <li>
-                <nuxt-link to="/teachers">Store</nuxt-link>
+                <a href="https://saraswati.trigrexam.com/">Store</a>
                 <!-- <ul class="sub-menu">
                   <li><nuxt-link to="/teachers">Teachers</nuxt-link></li>
                   <li>
@@ -150,7 +169,7 @@ export default {
   },
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "http://18.219.9.26:1337",
       courses: null,
     };
   },
@@ -178,5 +197,8 @@ export default {
 .moadalImg {
   width: 100%;
   height: auto;
+}
+.fab {
+  color: white;
 }
 </style>

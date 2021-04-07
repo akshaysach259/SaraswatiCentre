@@ -2,7 +2,7 @@
   <div>
     <NavOne />
     <PageHeader title="Course Details" />
-    <CourseDetails :course="course" />
+    <CourseDetails :course="course" :courseImageURL="courseImageURL" />
     <Footer />
   </div>
 </template>
@@ -15,8 +15,9 @@ import axios from "axios";
 export default {
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "http://18.219.9.26:1337",
       course: "",
+      courseImageURL: "",
     };
   },
   mounted() {
@@ -28,6 +29,7 @@ export default {
         .get(`${this.URL}/Courses/${this.$route.params.id}`)
         .then((response) => {
           this.course = response.data;
+          this.courseImageURL = this.course.Image770X447.url;
           console.log(this.course);
           console.log(`${this.URL}/Courses/${this.$route.params.id}`);
         })

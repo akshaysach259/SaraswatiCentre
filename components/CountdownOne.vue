@@ -11,10 +11,9 @@
             </p>
             <!-- /.countdown-one__tag-line -->
             <p class="countdown-one__text">
-              Lorem ipsum gravida nibh vel velit auctor aliquetnean
-              sollicitudin, lorem quis bibendum auci elit consequat is simply
-              free text available in the psutis sem nibh id eis sed odio sit
-              amet.
+              Welcome to Saraswati World of Banking Education - Get the 'Star
+              Banker of India' tag Start your star performance. Join us to grow
+              from an aspirant to a national achiever.
             </p>
             <!-- /.countdown-one__text -->
             <ul class="countdown-one__list list-unstyled">
