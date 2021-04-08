@@ -14,7 +14,7 @@ export default {
   name: "BannerThree",
   data() {
     return {
-      URL: "http://18.219.9.26:1337",
+      URL: "https://admin.saraswaticentre.com",
       carousels: [],
     };
   },
@@ -28,7 +28,7 @@ export default {
     async loadImages() {
       if (screen.width > 500) {
         axios
-          .get(`${this.URL}/carousel-banners`)
+          .get(`${this.URL}/banner-carousels`)
           .then((response) => {
             const carouselData = response.data;
             carouselData.forEach((carousel) => {
@@ -53,7 +53,7 @@ export default {
       } else {
         console.log("Mobile Content");
         axios
-          .get(`${this.URL}/carousel-heads`)
+          .get(`${this.URL}/banner-carousels`)
           .then((response) => {
             const carouselData = response.data;
             carouselData.forEach((carousel) => {

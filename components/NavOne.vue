@@ -3,39 +3,18 @@
     <div class="topbar-one">
       <div class="container">
         <div class="topbar-one__left">
-          <a href="#">info@saraswati.com</a>
-          <a href="#">+91 909090908</a>
+          <a href="#">Saraswaticentre@gmail.com</a>
+        </div>
+        <div class="topbar-one__right">
+          <a href="https://wa.me/+917428835339" target="_blank"
+            ><i class="fab fa-whatsapp"></i>
+            <span class="ml-1">+917428835339</span></a
+          >
         </div>
         <!-- /.topbar-one__left -->
-        <div class="topbar-one__right">
-          <div class="header__social">
-            <a href="https://twitter.com/SBIPOcoaching" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
-              target="_blank"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/saraswaticen/?r=nametag"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
-              target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a
-              href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </div>
-        </div>
         <!-- /.topbar-one__right -->
       </div>
+
       <!-- /.container -->
     </div>
     <!-- /.topbar-one -->
@@ -53,8 +32,34 @@
               />
             </a>
 
+            <div class="topbar-one__right">
+              <div class="header__social">
+                <a href="https://twitter.com/SBIPOcoaching" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
+                  target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/saraswaticen/?r=nametag"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
             <!-- /.header__social -->
-            <button class="menu-toggler" data-target=".main-navigation">
+            <button
+              class="menu-toggler topbar-one__right"
+              data-target=".main-navigation"
+            >
               <span class="kipso-icon-menu"></span>
             </button>
           </div>
@@ -87,8 +92,7 @@
                   <li v-for="course in courses" :key="course.id">
                     <nuxt-link
                       :to="{
-                        name: 'course-details-id',
-                        params: { id: course.id },
+                        path: '/course-details/' + course.id,
                       }"
                       >{{ course.Title }}</nuxt-link
                     >
@@ -169,7 +173,7 @@ export default {
   },
   data() {
     return {
-      URL: "http://18.219.9.26:1337",
+      URL: "https://admin.saraswaticentre.com",
       courses: null,
     };
   },
@@ -199,6 +203,11 @@ export default {
   height: auto;
 }
 .fab {
+  color: #f16101;
+  opacity: 0.9;
+}
+.fa-whatsapp {
+  font-size: 0.9rem;
   color: white;
 }
 </style>

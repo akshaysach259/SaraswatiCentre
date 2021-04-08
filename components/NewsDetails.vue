@@ -5,7 +5,10 @@
         <div class="col-lg-12">
           <div class="blog-one__single">
             <div class="blog-one__image">
-              <img :src="`http://18.219.9.26:1337${blogImageURL}`" alt="" />
+              <img
+                :src="`https://admin.saraswaticentre.com${blogImageURL}`"
+                alt=""
+              />
             </div>
             <!-- /.blog-one__image -->
             <div class="blog-one__content text-center">

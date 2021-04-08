@@ -64,7 +64,7 @@
                 <nuxt-link
                   :to="{
                     name: 'course-details',
-                    params: { id: '4' },
+                    params: { id: '5' },
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -112,18 +112,29 @@
                 </div>
                 <!-- /.course-one__stars -->
                 <div class="course-one__meta">
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Ebook</a
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/1',
+                    }"
                   >
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Mock Test</a
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Ebook</a
+                    ></nuxt-link
+                  >
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/1',
+                    }"
+                  >
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Mock Test</a
+                    ></nuxt-link
                   >
                 </div>
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    name: 'course-details',
-                    params: { id: '1' },
+                    path: '/course-details/1',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -171,18 +182,29 @@
                 </div>
                 <!-- /.course-one__stars -->
                 <div class="course-one__meta">
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Ebook</a
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/2',
+                    }"
                   >
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Mock Test</a
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Ebook</a
+                    ></nuxt-link
+                  >
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/2',
+                    }"
+                  >
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Mock Test</a
+                    ></nuxt-link
                   >
                 </div>
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    name: 'course-details',
-                    params: { id: '2' },
+                    path: '/course-details/2',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -230,18 +252,29 @@
                 </div>
                 <!-- /.course-one__stars -->
                 <div class="course-one__meta">
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Ebook</a
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/3',
+                    }"
                   >
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Mock Test</a
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Ebook</a
+                    ></nuxt-link
+                  >
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/3',
+                    }"
+                  >
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Mock Test</a
+                    ></nuxt-link
                   >
                 </div>
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    name: 'course-details',
-                    params: { id: '5' },
+                    path: '/course-details/3',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -291,8 +324,7 @@
                 <div class="course-one__meta">
                   <nuxt-link
                     :to="{
-                      name: 'course-details',
-                      params: { id: '3' },
+                      path: '/course-details/4',
                     }"
                   >
                     <a href="/course-details"
@@ -301,8 +333,7 @@
                   >
                   <nuxt-link
                     :to="{
-                      name: 'course-details',
-                      params: { id: '4' },
+                      path: '/course-details/4',
                     }"
                   >
                     <a href="/course-details"
@@ -313,8 +344,7 @@
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    name: 'course-details',
-                    params: { id: '4' },
+                    path: '/course-details/4',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -343,7 +373,7 @@ export default {
   name: "CourseOne",
   data() {
     return {
-      URL: "http://18.219.9.26:1337",
+      URL: "https://admin.saraswaticentre.com",
       courses: [],
     };
   },

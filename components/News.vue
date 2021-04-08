@@ -6,7 +6,9 @@
           <div class="blog-one__single">
             <div class="blog-one__image">
               <img
-                :src="'http://18.219.9.26:1337' + blog.Image370X370.url"
+                :src="
+                  'https://admin.saraswaticentre.com' + blog.Image370X370.url
+                "
                 alt=""
               />
               <nuxt-link
@@ -78,7 +80,7 @@ export default {
   name: "News",
   data() {
     return {
-      URL: "http://18.219.9.26:1337",
+      URL: "https://admin.saraswaticentre.com",
       blogs: [],
     };
   },

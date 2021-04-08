@@ -40,7 +40,10 @@
             </div>
             <!-- /.course-details__top -->
             <div class="course-one__image">
-              <img :src="`http://18.219.9.26:1337${courseImageURL}`" alt="" />
+              <img
+                :src="`https://admin.saraswaticentre.com${courseImageURL}`"
+                alt=""
+              />
               <i class="far fa-heart"></i
               ><!-- /.far fa-heart -->
             </div>
@@ -178,9 +181,12 @@
                 >
                   <div class="col-xl-4 testPaper">
                     <i class="far fa-folder-open"></i>
-                    <a :href="`http://18.219.9.26:1337` + testPaper.url">{{
-                      testPaper.name
-                    }}</a>
+                    <a
+                      :href="
+                        `https://admin.saraswaticentre.com` + testPaper.url
+                      "
+                      >{{ testPaper.name }}</a
+                    >
                   </div>
 
                   <!-- /.col-lg-8 -->
@@ -250,7 +256,7 @@
                 <i class="far fa-flag"></i
                 ><!-- /.far fa-flag --> </span
               ><!-- /.course-details__icon -->
-              Mock Test: <span>{{ course.Mocktest }}</span> </a
+              Mock Test: <span>{{ course.MockTest }}</span> </a
             ><!-- /.course-details__meta-link -->
             <a href="#" class="course-details__meta-link">
               <span class="course-details__meta-icon">

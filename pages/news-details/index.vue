@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      URL: "http://18.219.9.26:1337",
+      URL: "https://admin.saraswaticentre.com",
       blog: "",
       blogImageURL: "",
     };
