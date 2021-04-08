@@ -172,7 +172,7 @@ export default {
   name: "CourseCategory",
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "https://admin.saraswaticentre.com",
       courses: [],
     };
   },

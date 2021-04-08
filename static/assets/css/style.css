@@ -433,9 +433,9 @@ a:visited {
   color: #81868a;
   position: relative;
 }
-.header-navigation ul.navigation-box > li.current > a, .header-navigation ul.navigation-box > li:hover > a {
+/* .header-navigation ul.navigation-box > li.current > a, .header-navigation ul.navigation-box > li:hover > a {
   color: #f16101;
-}
+} */
 .header-navigation ul.navigation-box > li > .sub-menu {
   position: absolute;
   top: 100%;

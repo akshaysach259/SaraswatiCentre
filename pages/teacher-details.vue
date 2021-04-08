@@ -7,16 +7,16 @@
   </div>
 </template>
 <script>
-  import PageHeader from "../components/PageHeader";
-  import NavOne from "../components/NavOne";
-  import Footer from "../components/Footer";
-  import TeacherDetails from "../components/TeacherDetails";
-  export default {
-    components: {TeacherDetails, Footer, NavOne, PageHeader},
-    head(){
-      return {
-        title: "Kipso | Teacher Details"
-      }
-    }
-  }
+import PageHeader from "../components/PageHeader";
+import NavOne from "../components/NavOne";
+import Footer from "../components/Footer";
+import TeacherDetails from "../components/TeacherDetails";
+export default {
+  components: { TeacherDetails, Footer, NavOne, PageHeader },
+  head() {
+    return {
+      title: "SaraswatiCentre | Teacher Details",
+    };
+  },
+};
 </script>
