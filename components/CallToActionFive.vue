@@ -20,7 +20,7 @@
       <p class="cta-five__text">Engage with us & Enhance your self</p>
 
       <!-- /.cta-five__text -->
-      <a href="#" class="thm-btn cta-five__btn">Learn More</a
+      <a href="#" class="thm-btn cta-five__btn">Start Free Learning</a
       ><!-- /.thm-btn cta-five__btn -->
     </div>
     <!-- /.container text-center -->

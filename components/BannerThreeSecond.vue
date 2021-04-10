@@ -88,4 +88,7 @@ export default {
     display: none;
   }
 }
+.slider-three {
+  padding-top: 250;
+}
 </style>

@@ -40,7 +40,7 @@
               <input type="text" placeholder="Phone Number" name="phone" />
               <input type="text" placeholder="Comment" name="message" />
               <button type="submit" class="thm-btn become-teacher__form-btn">
-                Apply For It
+                Submit
               </button>
             </form>
             <!-- /.become-teacher__form-content -->

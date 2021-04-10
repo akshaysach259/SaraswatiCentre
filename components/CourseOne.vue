@@ -3,10 +3,10 @@
     <section class="course-one__top-title home-one">
       <div class="container">
         <div class="block-title mb-0">
-          <h2 class="block-title__title">
+          <h3 class="block-title__title">
             Explore our <br />
             popular courses
-          </h2>
+          </h3>
           <!-- /.block-title__title -->
         </div>
         <!-- /.block-title -->
