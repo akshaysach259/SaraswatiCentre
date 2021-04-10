@@ -7,8 +7,14 @@
         </div>
         <div class="topbar-one__right">
           <a href="https://wa.me/+917428835339" target="_blank"
-            ><i class="fab fa-whatsapp"></i>
-            <span class="ml-1">+917428835339</span></a
+            ><i class="fab fa-whatsapp ml-3"></i>
+            <span class="ml-1">Chat on Whatsapp</span></a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=com.saraswati.trigrexam"
+            target="_blank"
+            ><i class="fab fa-android"></i>
+            <span class="ml-1">Download our App</span></a
           >
         </div>
         <!-- /.topbar-one__left -->
@@ -34,18 +40,16 @@
 
             <div class="topbar-one__right">
               <div class="header__social">
-                <a href="https://twitter.com/SBIPOcoaching" target="_blank"
-                  ><i class="fab fa-twitter"></i
+                <a href="https://t.me/saraswaticentre" target="_blank"
+                  ><i class="fab fa-telegram"></i
                 ></a>
                 <a
                   href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
                   target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
-                <a
-                  href="https://www.instagram.com/saraswaticen/?r=nametag"
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
+                <a href="https://saraswaticentre.blogspot.com/" target="_blank"
+                  ><i class="fab fa-blogger"></i
                 ></a>
                 <a
                   href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
@@ -100,10 +104,7 @@
                 </ul>
                 <!-- /.sub-menu -->
               </li>
-              <li>
-                <a href="https://saraswati.trigrexam.com/">Test Series</a>
-                <!-- /.sub-menu -->
-              </li>
+
               <li>
                 <a href="https://saraswati.trigrexam.com/">Store</a>
                 <!-- <ul class="sub-menu">
@@ -127,6 +128,21 @@
                     <nuxt-link to="/news-details">News Details</nuxt-link>
                   </li>
                 </ul> -->
+                <!-- /.sub-menu -->
+              </li>
+              <li>
+                <a href="#">Resources</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
+                    <!-- /.sub-menu -->
+                  </li>
+                  <li>
+                    <nuxt-link to="/PreviousQuestions"
+                      >Previous Year Questions</nuxt-link
+                    >
+                  </li>
+                </ul>
                 <!-- /.sub-menu -->
               </li>
               <li>
@@ -198,15 +214,24 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 600px) {
+  .topbar-one__left {
+    display: none;
+  }
+}
 .moadalImg {
   width: 100%;
   height: auto;
 }
 .fab {
-  color: #f16101;
+  color: #515355;
   opacity: 0.9;
 }
 .fa-whatsapp {
+  font-size: 0.9rem;
+  color: white;
+}
+.fa-android {
   font-size: 0.9rem;
   color: white;
 }

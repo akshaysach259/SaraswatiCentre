@@ -43,7 +43,7 @@ export default {
   components: { CourseDetails, Footer, NavOne, PageHeader },
   head() {
     return {
-      title: "Kipso | Course Details",
+      title: "Saraswati Centre | Course Details",
     };
   },
 };

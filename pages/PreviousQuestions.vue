@@ -1,21 +1,22 @@
 <template>
   <div>
     <NavOne />
-    <PageHeader title="Blog" />
-    <News />
+    <PageHeader title="" />
+    <PreviousYearQuestions />
     <Footer />
   </div>
 </template>
 <script>
+import PreviousYearQuestions from "../components/PreviousYearQuestions";
 import PageHeader from "../components/PageHeader";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
-import News from "../components/News";
 export default {
-  components: { Footer, NavOne, PageHeader, News },
+  name: "PreviousQuestions",
+  components: { Footer, NavOne, PageHeader, PreviousYearQuestions },
   head() {
     return {
-      title: "SaraswatiCentre | News",
+      title: "SaraswatiCentre | Contact",
     };
   },
 };

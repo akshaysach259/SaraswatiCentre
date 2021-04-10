@@ -58,7 +58,7 @@ export default {
   },
   head() {
     return {
-      title: "Kipso | Home 3",
+      title: "SaraswatiCentre | Home 3",
     };
   },
 };
