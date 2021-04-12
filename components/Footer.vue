@@ -148,18 +148,16 @@
               class="scroll-to-target site-footer__scroll-top"
               ><i class="kipso-icon-top-arrow"></i
             ></a>
-            <a href="https://twitter.com/SBIPOcoaching" target="_blank"
-              ><i class="fab fa-twitter"></i
+            <a href="https://t.me/saraswaticentre" target="_blank"
+              ><i class="fab fa-telegram"></i
             ></a>
             <a
               href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
               target="_blank"
               ><i class="fab fa-facebook-square"></i
             ></a>
-            <a
-              href="https://www.instagram.com/saraswaticen/?r=nametag"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
+            <a href="https://saraswaticentre.blogspot.com/" target="_blank"
+              ><i class="fab fa-blogger"></i
             ></a>
             <a
               href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
@@ -206,5 +204,8 @@ export default {
 <style scoped>
 .footer-playstore {
   max-width: 14rem;
+}
+.fab {
+  color: aliceblue;
 }
 </style>

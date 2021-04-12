@@ -87,7 +87,7 @@ export default {
   name: "AboutTwo",
   data() {
     return {
-      showModal: true,
+      showModal: false,
     };
   },
   mounted() {

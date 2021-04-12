@@ -1,6 +1,7 @@
 export default {
   mode: "universal",
   server: {
+    host: "0.0.0.0",
     port: 80 // default: 3000
   },
   /*

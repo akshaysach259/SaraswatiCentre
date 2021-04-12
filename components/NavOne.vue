@@ -61,6 +61,7 @@
 
             <!-- /.header__social -->
             <button
+              @click="showMenu()"
               class="menu-toggler topbar-one__right"
               data-target=".main-navigation"
             >
@@ -187,12 +188,14 @@ export default {
   validate({ params }) {
     return true;
   },
+  props: [],
   data() {
     return {
       URL: "https://admin.saraswaticentre.com",
       courses: null,
     };
   },
+  props: ["pageName"],
   mounted() {
     this.loadCourses();
   },
@@ -207,6 +210,40 @@ export default {
           console.log(error);
           this.errored = true;
         });
+    },
+    showMenu() {
+      console.log("Clicked");
+      console.log(this.pageName);
+      console.log(this.pageName == "index");
+      if (this.pageName == "index") {
+        console.log("Open or Close");
+      } else {
+        if ($(".main-navigation .navigation-box").length) {
+          var subMenu = $(".main-navigation .sub-menu");
+          subMenu
+            .parent("li")
+            .children("a")
+            .append(function () {
+              return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
+            });
+          var mainNavToggler = $(".header-navigation .menu-toggler");
+          console.log(mainNavToggler);
+          var subNavToggler = $(".main-navigation .sub-nav-toggler");
+          mainNavToggler.on("click", function () {
+            console.log("Showing Menu");
+            var Self = $(this);
+            var menu = Self.data("target");
+            $(menu).slideToggle();
+            $(menu).toggleClass("showen");
+            return false;
+          });
+          subNavToggler.on("click", function () {
+            var Self = $(this);
+            Self.parent().parent().children(".sub-menu").slideToggle();
+            return false;
+          });
+        }
+      }
     },
   },
   name: "NavOne",

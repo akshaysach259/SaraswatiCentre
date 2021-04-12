@@ -16,7 +16,7 @@ export default {
   components: { NewsDetails, Footer, NavOne, PageHeader },
   head() {
     return {
-      title: "Kipso | News Details",
+      title: "SaraswatiCentre  | News Details",
     };
   },
   data() {

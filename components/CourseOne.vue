@@ -53,18 +53,32 @@
                 </div>
                 <!-- /.course-one__stars -->
                 <div class="course-one__meta">
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Ebook</a
+                  <nuxt-link
+                    :to="{
+                      name: 'course-details',
+                      params: { id: '3' },
+                    }"
                   >
-                  <a href="/course-details"
-                    ><i class="far fa-folder-open"></i> Mock Test</a
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Ebook</a
+                    ></nuxt-link
+                  >
+                  <nuxt-link
+                    :to="{
+                      name: 'course-details',
+                      params: { id: '3' },
+                    }"
+                  >
+                    <a href="/course-details"
+                      ><i class="far fa-folder-open"></i> Mock Test</a
+                    ></nuxt-link
                   >
                 </div>
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
                     name: 'course-details',
-                    params: { id: '5' },
+                    params: { id: '3' },
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -114,6 +128,76 @@
                 <div class="course-one__meta">
                   <nuxt-link
                     :to="{
+                      path: '/course-details/2',
+                    }"
+                  >
+                    <a href="/course-details/2"
+                      ><i class="far fa-folder-open"></i> Ebook</a
+                    ></nuxt-link
+                  >
+                  <nuxt-link
+                    :to="{
+                      path: '/course-details/2',
+                    }"
+                  >
+                    <a href="/course-details/2"
+                      ><i class="far fa-folder-open"></i> Mock Test</a
+                    ></nuxt-link
+                  >
+                </div>
+                <!-- /.course-one__meta -->
+                <nuxt-link
+                  :to="{
+                    path: '/course-details/2',
+                  }"
+                  ><a href="/course-details" class="course-one__link">
+                    See Preview
+                  </a>
+                </nuxt-link>
+                <!-- /.course-one__link -->
+              </div>
+              <!-- /.course-one__content -->
+            </div>
+            <!-- /.course-one__single -->
+          </div>
+          <!-- /.item -->
+          <div class="item">
+            <div class="course-one__single color-1">
+              <div class="course-one__image">
+                <img src="/assets/images/courses/ibps_po.jpg" alt="" />
+                <i class="far fa-heart"></i
+                ><!-- /.far fa-heart -->
+              </div>
+              <!-- /.course-one__image -->
+              <div class="course-one__content">
+                <a href="#" class="course-one__category">Banking</a
+                ><!-- /.course-one__category -->
+                <div class="course-one__admin">
+                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  by <a href="#">Admin</a>
+                </div>
+                <!-- /.course-one__admin -->
+                <h2 class="course-one__title">
+                  <a href="/course-details/1">SBI PO</a>
+                </h2>
+                <!-- /.course-one__title -->
+                <div class="course-one__stars">
+                  <span class="course-one__stars-wrap">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> </span
+                  ><!-- /.course-one__stars-wrap -->
+                  <span class="course-one__count">4.8</span
+                  ><!-- /.course-one__count -->
+                  <span class="course-one__stars-count">250</span
+                  ><!-- /.course-one__stars-count -->
+                </div>
+                <!-- /.course-one__stars -->
+                <div class="course-one__meta">
+                  <nuxt-link
+                    :to="{
                       path: '/course-details/1',
                     }"
                   >
@@ -126,7 +210,7 @@
                       path: '/course-details/1',
                     }"
                   >
-                    <a href="/course-details"
+                    <a href="#"
                       ><i class="far fa-folder-open"></i> Mock Test</a
                     ></nuxt-link
                   >
@@ -146,7 +230,7 @@
             </div>
             <!-- /.course-one__single -->
           </div>
-          <!-- /.item -->
+          <!-- Item-->
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
@@ -160,7 +244,7 @@
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
                   <img src="/assets/images/icons/admin.jpg" alt="" />
-                  by <a href="/teacher-details">Admin</a>
+                  by <a href="">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
                 <h2 class="course-one__title">
@@ -184,19 +268,19 @@
                 <div class="course-one__meta">
                   <nuxt-link
                     :to="{
-                      path: '/course-details/2',
+                      path: '/course-details/4',
                     }"
                   >
-                    <a href="/course-details"
+                    <a href="/course-details/4"
                       ><i class="far fa-folder-open"></i> Ebook</a
                     ></nuxt-link
                   >
                   <nuxt-link
                     :to="{
-                      path: '/course-details/2',
+                      path: '/course-details/4',
                     }"
                   >
-                    <a href="/course-details"
+                    <a href="/course-details/4"
                       ><i class="far fa-folder-open"></i> Mock Test</a
                     ></nuxt-link
                   >
@@ -204,9 +288,9 @@
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    path: '/course-details/2',
+                    path: '/course-details/4',
                   }"
-                  ><a href="/course-details" class="course-one__link">
+                  ><a href="/course-details/4" class="course-one__link">
                     See Preview
                   </a>
                 </nuxt-link>
@@ -230,11 +314,11 @@
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
                   <img src="/assets/images/icons/admin.jpg" alt="" />
-                  by <a href="/teacher-details">Admin</a>
+                  by <a href="#">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
                 <h2 class="course-one__title">
-                  <a href="/course-details">GDPI</a>
+                  <a href="/course-details/5">GDPI</a>
                 </h2>
                 <!-- /.course-one__title -->
                 <div class="course-one__stars">
@@ -254,7 +338,7 @@
                 <div class="course-one__meta">
                   <nuxt-link
                     :to="{
-                      path: '/course-details/3',
+                      path: '/course-details/5',
                     }"
                   >
                     <a href="/course-details"
@@ -263,7 +347,7 @@
                   >
                   <nuxt-link
                     :to="{
-                      path: '/course-details/3',
+                      path: '/course-details/5',
                     }"
                   >
                     <a href="/course-details"
@@ -274,7 +358,7 @@
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    path: '/course-details/3',
+                    path: '/course-details/5',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview
@@ -300,11 +384,11 @@
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
                   <img src="/assets/images/icons/admin.jpg" alt="" />
-                  by <a href="/teacher-details">Admin</a>
+                  by <a href="#">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
                 <h2 class="course-one__title">
-                  <a href="/course-details">SBI-PO</a>
+                  <a href="/course-details/1">SBI-PO</a>
                 </h2>
                 <!-- /.course-one__title -->
                 <div class="course-one__stars">
@@ -324,7 +408,7 @@
                 <div class="course-one__meta">
                   <nuxt-link
                     :to="{
-                      path: '/course-details/4',
+                      path: '/course-details/1',
                     }"
                   >
                     <a href="/course-details"
@@ -333,7 +417,7 @@
                   >
                   <nuxt-link
                     :to="{
-                      path: '/course-details/4',
+                      path: '/course-details/1',
                     }"
                   >
                     <a href="/course-details"
@@ -344,7 +428,7 @@
                 <!-- /.course-one__meta -->
                 <nuxt-link
                   :to="{
-                    path: '/course-details/4',
+                    path: '/course-details/1',
                   }"
                   ><a href="/course-details" class="course-one__link">
                     See Preview

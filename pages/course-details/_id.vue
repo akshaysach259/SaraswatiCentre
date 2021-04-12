@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NavOne />
+  <div v-if="renderComponent">
+    <NavOne :pageName="pageName" />
     <PageHeader title="Course Details" />
     <CourseDetails :course="course" :courseImageURL="courseImageURL" />
     <Footer />
@@ -18,12 +18,23 @@ export default {
       URL: "https://admin.saraswaticentre.com",
       course: "",
       courseImageURL: "",
+      pageName: "courseVueDetails",
+      renderComponent: true,
     };
   },
   mounted() {
     this.loadCourse();
   },
   methods: {
+    forceRerender() {
+      // remove the my-component component from the DOM
+      this.renderComponent = false;
+
+      this.$nextTick(() => {
+        // add my-component component in DOM
+        this.renderComponent = true;
+      });
+    },
     async loadCourse() {
       axios
         .get(`${this.URL}/Courses/${this.$route.params.id}`)

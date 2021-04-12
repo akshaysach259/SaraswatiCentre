@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavOne />
+    <NavOne :pageName="pageName" />
     <BannerThree />
     <CourseCatTwo />
     <AboutTwo />
@@ -55,6 +55,11 @@ export default {
     VideoThree,
     ClientsLogoOne,
     CallToActionFive,
+  },
+  data() {
+    return {
+      pageName: "index",
+    };
   },
   head() {
     return {
