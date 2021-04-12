@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavOne />
+    <NavOne :pageName="pageName" />
     <PageHeader title="Course Details" />
     <CourseDetails :course="course" :courseImageURL="courseImageURL" />
     <Footer />
@@ -18,6 +18,7 @@ export default {
       URL: "https://admin.saraswaticentre.com",
       course: "",
       courseImageURL: "",
+      pageName: "course_details",
     };
   },
   mounted() {

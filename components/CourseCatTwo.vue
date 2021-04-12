@@ -2,7 +2,7 @@
   <section class="course-category-two">
     <div class="container text-center">
       <div class="inner-container">
-        <marquee>{{ MarqueeText }}<a href="ran"> Learn more</a></marquee>
+        <marquee>{{ MarqueeText }}<a :href="`${Link}`"> Learn more</a></marquee>
         <div class="course-category-two__carousel owl-carousel owl-theme">
           <div class="item">
             <div class="course-category-two__single color-1">
