@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavOne />
-    <PageHeader title="News Details" />
+    <PageHeader title="News Details" img="../assets/images/blog.jpg" />
     <NewsDetails :blog="blog" :blogImageURL="blogImageURL" />
     <Footer />
   </div>
