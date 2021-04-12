@@ -1,7 +1,7 @@
 <template>
   <div v-if="renderComponent">
     <NavOne :pageName="pageName" />
-    <PageHeader title="Course Details" />
+    <PageHeader title="Course Details" img="../assets/images/course.jpg" />
     <CourseDetails :course="course" :courseImageURL="courseImageURL" />
     <Footer />
   </div>
