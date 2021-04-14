@@ -4,102 +4,119 @@
       <div class="inner-container">
         <marquee>{{ MarqueeText }}<a :href="`${Link}`"> Learn more</a></marquee>
         <div class="course-category-two__carousel owl-carousel owl-theme">
-          <div class="item">
-            <div class="course-category-two__single color-1">
-              <div class="course-category-two__icon">
-                <img
-                  src="/assets/images/icons/sbi.png"
-                /><!-- /.kipso-icon-camera -->
+          <div class="item" href="/courses">
+            <a href="/courses">
+              <div class="course-category-two__single color-1">
+                <div class="course-category-two__icon">
+                  <img
+                    src="/assets/images/icons/sbi.png"
+                  /><!-- /.kipso-icon-camera -->
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title">
+                  <a href="#">SBI Clerk</a>
+                </h3>
+                <!-- /.course-category-two__title -->
               </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title">
-                <a href="#">SBI Clerk</a>
-              </h3>
-              <!-- /.course-category-two__title -->
-            </div>
+            </a>
             <!-- /.course-category-two__single -->
           </div>
-          <div class="item">
-            <div class="course-category-two__single color-4">
-              <div class="course-category-two__icon">
-                <img src="/assets/images/icons/ibps.png" />
+          <div class="item" href="/courses">
+            <a href="/courses">
+              <div class="course-category-two__single color-4">
+                <div class="course-category-two__icon">
+                  <img src="/assets/images/icons/ibps.png" />
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title">
+                  <a href="#">IBPS Clerk</a>
+                </h3>
+                <!-- /.course-category-two__title -->
               </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title">
-                <a href="#">IBPS Clerk</a>
-              </h3>
-              <!-- /.course-category-two__title -->
-            </div>
+            </a>
+            <!-- /.course-category-two__single -->
+          </div>
+
+          <!-- /.item -->
+          <div class="item" href="/courses">
+            <a href="/courses">
+              <div class="course-category-two__single color-3">
+                <div class="course-category-two__icon">
+                  <img
+                    src="/assets/images/icons/sbi.png"
+                  /><!-- /.kipso-icon-camera -->
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title">
+                  <a href="#">SBI PO</a>
+                </h3>
+                <!-- /.course-category-two__title -->
+              </div>
+            </a>
+            <!-- /.course-category-two__single -->
+          </div>
+          <!-- /.item -->
+          <div class="item" href="/courses">
+            <a href="/courses">
+              <div class="course-category-two__single color-3">
+                <div class="course-category-two__icon">
+                  <img
+                    src="/assets/images/icons/ibps.png"
+                  /><!-- /.kipso-icon-camera -->
+                  <!-- /.kipso-icon-camera -->
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title">
+                  <a href="#">IBPS PO</a>
+                </h3>
+                <!-- /.course-category-two__title -->
+              </div>
+            </a>
+            <!-- /.course-category-two__single -->
+          </div>
+          <div class="item" href="/courses">
+            <a href="/courses">
+              <div class="course-category-two__single color-5">
+                <div class="course-category-two__icon">
+                  <img src="/assets/images/icons/gdpi.png" />
+                  <!-- /.kipso-icon-camera -->
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
+                <!-- /.course-category-two__title -->
+              </div>
+            </a>
             <!-- /.course-category-two__single -->
           </div>
           <!-- /.item -->
           <div class="item">
-            <div class="course-category-two__single color-3">
-              <div class="course-category-two__icon">
-                <img
-                  src="/assets/images/icons/sbi.png"
-                /><!-- /.kipso-icon-camera -->
+            <a href="/courses">
+              <div class="course-category-two__single color-4">
+                <div class="course-category-two__icon">
+                  <img src="/assets/images/icons/ibps.png" />
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title">
+                  <a href="#">IBPS Clerk</a>
+                </h3>
+                <!-- /.course-category-two__title -->
               </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">SBI PO</a></h3>
-              <!-- /.course-category-two__title -->
-            </div>
+            </a>
             <!-- /.course-category-two__single -->
           </div>
           <!-- /.item -->
           <div class="item">
-            <div class="course-category-two__single color-3">
-              <div class="course-category-two__icon">
-                <img
-                  src="/assets/images/icons/ibps.png"
-                /><!-- /.kipso-icon-camera -->
-                <!-- /.kipso-icon-camera -->
+            <a href="/courses">
+              <div class="course-category-two__single color-5">
+                <div class="course-category-two__icon">
+                  <img src="/assets/images/icons/gdpi.png" />
+                  <!-- /.kipso-icon-camera -->
+                </div>
+                <!-- /.course-category-two__icon -->
+                <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
+                <!-- /.course-category-two__title -->
               </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title">
-                <a href="#">IBPS PO</a>
-              </h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
-          <div class="item">
-            <div class="course-category-two__single color-5">
-              <div class="course-category-two__icon">
-                <img src="/assets/images/icons/gdpi.png" />
-                <!-- /.kipso-icon-camera -->
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
-          <!-- /.item -->
-          <div class="item">
-            <div class="course-category-two__single color-4">
-              <div class="course-category-two__icon">
-                <img src="/assets/images/icons/ibps.png" />
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title">
-                <a href="#">IBPS Clerk</a>
-              </h3>
-              <!-- /.course-category-two__title -->
-            </div>
-            <!-- /.course-category-two__single -->
-          </div>
-          <!-- /.item -->
-          <div class="item">
-            <div class="course-category-two__single color-5">
-              <div class="course-category-two__icon">
-                <img src="/assets/images/icons/gdpi.png" />
-                <!-- /.kipso-icon-camera -->
-              </div>
-              <!-- /.course-category-two__icon -->
-              <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
-              <!-- /.course-category-two__title -->
-            </div>
+            </a>
             <!-- /.course-category-two__single -->
           </div>
           <!-- /.item -->

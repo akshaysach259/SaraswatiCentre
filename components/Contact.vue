@@ -21,9 +21,8 @@
               <h2 class="contact-info-one__title">About Us</h2>
               <!-- /.contact-info-one__title -->
               <p class="contact-info-one__text">
-                Lorem ipsum is simply free text <br />
-                available in the market to use <br />
-                deliver satisfaction.
+                Saraswati World of Banking Education - Get the 'Star Banker of
+                India' tag to Start your star performance.
               </p>
               <!-- /.contact-info-one__text -->
             </div>
@@ -75,7 +74,7 @@
               <h2 class="contact-info-one__title">Contact Info</h2>
               <!-- /.contact-info-one__title -->
               <p class="contact-info-one__text">
-                info.saraswaticentre@gmail.com <br />
+                info@saraswaticentre.com <br />
                 +91 74288 35339 <br />
                 &nbsp;
               </p>
@@ -104,6 +103,12 @@
           <div class="row low-gutters">
             <div class="col-lg-6">
               <input type="text" name="name" placeholder="Your Name" />
+            </div>
+            <div class="col-lg-6">
+              <input type="text" name="name" placeholder="Your Mobile Number" />
+            </div>
+            <div class="col-lg-6">
+              <input type="text" name="name" placeholder="Your Address" />
             </div>
             <!-- /.col-lg-6 -->
             <div class="col-lg-6">

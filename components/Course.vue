@@ -5,7 +5,12 @@
         <div class="col-lg-4" v-for="course in courses" :key="course.id">
           <div class="course-one__single">
             <div class="course-one__image">
-              <img src="/assets/images/course-1-1.jpg" alt="" />
+              <img
+                :src="
+                  'https://admin.saraswaticentre.com' + course.Image370X243.url
+                "
+                alt=""
+              />
               <i class="far fa-heart"></i
               ><!-- /.far fa-heart -->
             </div>
@@ -14,15 +19,25 @@
               <a href="#" class="course-one__category">{{ course.Category }}</a
               ><!-- /.course-one__category -->
               <div class="course-one__admin">
-                <img src="/assets/images/team-1-1.jpg" alt="" />
-                by
-                <nuxt-link to="/teacher-details">{{
-                  course.TeacherName
-                }}</nuxt-link>
+                <img src="/assets/images/icons/admin.jpg" alt="" />
+                {{ course.Teacher }}
+                <nuxt-link
+                  :to="{
+                    name: 'course-details-id',
+                    params: { id: course.id },
+                  }"
+                  >{{ course.TeacherName }}</nuxt-link
+                >
               </div>
               <!-- /.course-one__admin -->
               <h2 class="course-one__title">
-                <nuxt-link to="/course-details">{{ course.Title }}</nuxt-link>
+                <nuxt-link
+                  :to="{
+                    name: 'course-details-id',
+                    params: { id: course.id },
+                  }"
+                  >{{ course.Title }}</nuxt-link
+                >
               </h2>
               <!-- /.course-one__title -->
               <div class="course-one__stars">
@@ -88,7 +103,7 @@ export default {
   name: "Course",
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "https://admin.saraswaticentre.com",
       courses: [],
     };
   },

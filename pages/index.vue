@@ -8,13 +8,14 @@
     <CountdownOne />
     <BannerThreeSecond />
     <BlogCarousel />
-    <!-- <CourseCategory /> -->
+
     <Testimonial />
     <CallToActionFive />
     <Footer />
   </div>
 </template>
 <script>
+import VideoOne from "../components/VideoOne";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
 import BannerThreeSecond from "../components/BannerThreeSecond";
@@ -36,6 +37,7 @@ import CourseCategory from "../components/CourseCategory";
 
 export default {
   components: {
+    VideoOne,
     Footer,
     NavOne,
     CourseCategory,

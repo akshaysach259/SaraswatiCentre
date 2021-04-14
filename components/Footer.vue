@@ -12,8 +12,7 @@
                   <li>
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
-                        params: { id: '1' },
+                        path: '/course-details/2',
                       }"
                     >
                       <p>SBI Clerk</p></nuxt-link
@@ -22,8 +21,7 @@
                   <li>
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
-                        params: { id: '2' },
+                        path: '/course-details/5',
                       }"
                     >
                       <p>IBPS-PO</p></nuxt-link
@@ -32,8 +30,7 @@
                   <li>
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
-                        params: { id: '2' },
+                        path: '/course-details/4',
                       }"
                     >
                       <p></p
@@ -42,8 +39,7 @@
                   <li>
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
-                        params: { id: '3' },
+                        path: '/course-details/3',
                       }"
                     >
                       <p>IBPS Clerk</p></nuxt-link
@@ -52,8 +48,7 @@
                   <li>
                     <nuxt-link
                       :to="{
-                        name: 'course-details',
-                        params: { id: '4' },
+                        path: '/course-details/1',
                       }"
                     >
                       <p>SBI PO</p></nuxt-link
@@ -72,17 +67,22 @@
                 <!-- /.footer-widget__title -->
                 <div class="footer-widget__link-wrap">
                   <ul class="list-unstyled footer-widget__link-list">
-                    <li><a href="#">About</a></li>
+                    <li><a href="#aboutus">About</a></li>
                     <li><a href="/courses">Courses</a></li>
-                    <li><a href="#">Test Series</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="/news">Blog</a></li>
+                    <li>
+                      <a href="https://saraswati.trigrexam.com/">Test Series</a>
+                    </li>
+                    <li>
+                      <a href="https://saraswati.trigrexam.com/">Store</a>
+                    </li>
+                    <li>
+                      <a href="https://saraswaticentre.blogspot.com/">Blog</a>
+                    </li>
                   </ul>
                   <!-- /.footer-widget__link-list -->
                   <ul class="list-unstyled footer-widget__link-list">
-                    <li><a href="#">Help </a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Register Now</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                    <li><a href="#Register">Register Now</a></li>
                   </ul>
                   <!-- /.footer-widget__link-list -->
                 </div>
@@ -139,7 +139,7 @@
       <div class="site-footer__bottom">
         <div class="container">
           <p class="site-footer__copy">
-            &copy; Copyright 2020 by <a href="#">SaraswatiCntre</a>
+            &copy; Copyright 2020 by <a href="#">SaraswatiCentre</a>
           </p>
           <div class="site-footer__social">
             <a

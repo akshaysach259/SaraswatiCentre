@@ -3,7 +3,7 @@
     <div class="topbar-one">
       <div class="container">
         <div class="topbar-one__left">
-          <a href="#">Saraswaticentre@gmail.com</a>
+          <a href="#">info@saraswaticentre.com</a>
         </div>
         <div class="topbar-one__right">
           <a href="https://wa.me/+917428835339" target="_blank"
@@ -212,11 +212,7 @@ export default {
         });
     },
     showMenu() {
-      console.log("Clicked");
-      console.log(this.pageName);
-      console.log(this.pageName == "index");
       if (this.pageName == "index") {
-        console.log("Open or Close");
       } else {
         if ($(".main-navigation .navigation-box").length) {
           var subMenu = $(".main-navigation .sub-menu");
@@ -227,10 +223,9 @@ export default {
               return '<button class="sub-nav-toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>';
             });
           var mainNavToggler = $(".header-navigation .menu-toggler");
-          console.log(mainNavToggler);
+
           var subNavToggler = $(".main-navigation .sub-nav-toggler");
           mainNavToggler.on("click", function () {
-            console.log("Showing Menu");
             var Self = $(this);
             var menu = Self.data("target");
             $(menu).slideToggle();

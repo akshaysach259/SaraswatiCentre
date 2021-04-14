@@ -32,17 +32,38 @@
             </div>
             <!-- /.become-teacher__top -->
             <form
-              action="/assets/inc/sendemail.php"
               class="become-teacher__form-content contact-form-validated"
+              v-on:submit.prevent="submitForm"
             >
-              <input type="text" placeholder="Your Name" name="name" />
-              <input type="text" placeholder="Email Address" name="email" />
-              <input type="text" placeholder="Phone Number" name="phone" />
-              <input type="text" placeholder="Comment" name="message" />
-              <button type="submit" class="thm-btn become-teacher__form-btn">
-                Submit
-              </button>
+              <p ref="success" class="success"></p>
+              <p ref="error" class="error"></p>
+              <input
+                type="text"
+                v-model="name"
+                placeholder="Your Name"
+                name="name"
+              />
+              <input
+                type="email"
+                v-model="email"
+                placeholder="Email Address"
+                name="email"
+              />
+              <input
+                type="number"
+                v-model="phone"
+                placeholder="Phone Number"
+                name="phone"
+              />
+              <input
+                type="text"
+                v-model="message"
+                placeholder="Message"
+                name="message"
+              />
+              <button class="thm-btn become-teacher__form-btn">Submit</button>
             </form>
+
             <!-- /.become-teacher__form-content -->
             <div class="result text-center"></div>
             <!-- /.result -->
@@ -58,10 +79,53 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CountdownOne",
+  data() {
+    return {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    };
+  },
+  methods: {
+    async submitForm() {
+      axios
+        .post("https://admin.saraswaticentre.com/user-data", {
+          name: this.name,
+          email: this.email,
+          phone: this.phone,
+          message: this.message,
+        })
+        .then((response) => {
+          if (response.status < 300) {
+            this.$refs.success.innerHTML =
+              "Thanks! We will Contact you shortly";
+            this.name = "";
+            this.email = "";
+            this.phone = "";
+            this.message = "";
+          } else {
+            this.$refs.error.innerHTML = "Sorry! Please Try Again";
+            this.name = "";
+            this.email = "";
+            this.phone = "";
+            this.message = "";
+          }
+        });
+    },
+  },
 };
 </script>
 
 <style scoped>
+.success {
+  color: #28a745;
+}
+.error {
+  color: red;
+}
 </style>
