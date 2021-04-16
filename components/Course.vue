@@ -55,11 +55,20 @@
               </div>
               <!-- /.course-one__stars -->
               <div class="course-one__meta">
-                <nuxt-link to="/course-details"
+                <nuxt-link
+                  :to="{
+                    name: 'course-details-id',
+                    params: { id: course.id },
+                  }"
                   ><i class="fas fa-book-reader"></i> Ebooks
                 </nuxt-link>
-                <nuxt-link to="/course-details"
-                  ><i class="far fa-folder-open"></i> Mock Test</nuxt-link
+                <nuxt-link
+                  :to="{
+                    name: 'course-details-id',
+                    params: { id: course.id },
+                  }"
+                >
+                  <i class="far fa-folder-open"></i> Mock Test</nuxt-link
                 >
               </div>
               <!-- /.course-one__meta -->

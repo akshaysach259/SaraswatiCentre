@@ -35,8 +35,9 @@ export default {
             const carouselData = response.data;
             carouselData.forEach((carousel) => {
               this.carouselLinks.push(carousel.Link);
+              let item = `${this.URL + carousel.CarouselImage.url}`;
               this.carousels.push({
-                src: `${this.URL + carousel.CarouselImage.url}`,
+                src: item,
               });
             });
             this.currentLink = this.carouselLinks[0];

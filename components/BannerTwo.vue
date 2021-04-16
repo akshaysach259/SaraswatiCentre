@@ -36,7 +36,7 @@ export default {
 
   data() {
     return {
-      URL: "http://localhost:1337",
+      URL: "https://admin.saraswaticentre.com",
       carousels: [],
     };
   },
@@ -46,7 +46,7 @@ export default {
   methods: {
     async loadCarousel() {
       axios
-        .get(`${this.URL}/Carousels`)
+        .get(`${this.URL}/banner-carousels`)
         .then((response) => {
           const carouselData = response.data;
           carouselData.forEach((carousel) => {

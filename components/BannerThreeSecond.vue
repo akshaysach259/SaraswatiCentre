@@ -1,5 +1,5 @@
 <template>
-  <section class="slider-three" ref="carouselsSection" @click="onImageClick()">
+  <section class="slider-three" ref="bannerSectionn" @click="onImageClick()">
     <div class="container desktop-view">
       <!-- /.row -->
     </div>
@@ -14,10 +14,10 @@ export default {
   data() {
     return {
       URL: "https://admin.saraswaticentre.com",
-      carousels: [],
-      carouselLinks: [],
-      currentLink: [],
-      item: 1,
+      banners: [],
+      bannerLinks: [],
+      currentBannerLink: [],
+      bannerItem: 1,
     };
   },
   mounted() {
@@ -31,19 +31,21 @@ export default {
       if (screen.width > 500) {
         axios
           .get(`${this.URL}/banner-carousels`)
-          .then((response) => {
-            const carouselData = response.data;
-            carouselData.forEach((carousel) => {
-              this.carouselLinks.push(carousel.Link);
-              this.carousels.push({
-                src: `${this.URL + carousel.CarouselImage.url}`,
+          .then((bannerResponse) => {
+            const bannerData = bannerResponse.data;
+            bannerData.forEach((banner) => {
+              this.bannerLinks.push(banner.Link);
+              itemBanner = `${this.URL + banner.CarouselImage.url}`;
+              console.log(itemBanner);
+              this.banners.push({
+                src: itemBanner,
               });
             });
-            this.currentLink = this.carouselLinks[0];
+            this.currentBannerLink = this.bannerLinks[0];
             setInterval(this.changeLink, 4300);
             if ($(".slider-three").length) {
               $(".slider-three").vegas({
-                slides: this.carousels,
+                slides: this.banners,
                 transition: "slideRight2",
                 timer: false,
                 overlay: false,
@@ -58,24 +60,23 @@ export default {
       } else {
         axios
           .get(`${this.URL}/banner-carousels`)
-          .then((response) => {
-            const carouselData = response.data;
-            carouselData.forEach((carousel) => {
-              this.carouselLinks.push(carousel.Link);
-              if (carousel.MobileImage != null) {
-                this.carousels.push({
-                  src: `${this.URL + carousel.MobileImage.url}`,
-                });
-              }
+          .then((bannerResponse) => {
+            const bannerData = bannerResponse.data;
+            bannerData.forEach((banner) => {
+              this.bannerLinks.push(banner.Link);
+              this.banners.push({
+                src: `${this.URL + banner.MobileImage.url}`,
+              });
             });
-            this.currentLink = this.carouselLinks[0];
+            this.currentBannerLink = this.bannerLinks[0];
             setInterval(this.changeLink, 4300);
             if ($(".slider-three").length) {
               $(".slider-three").vegas({
-                slides: this.carousels,
+                slides: this.banners,
                 transition: "slideRight2",
                 timer: false,
                 overlay: false,
+                delay: 4000,
               });
             }
           })
@@ -89,12 +90,12 @@ export default {
       window.location.href = this.currentLink;
     },
     changeLink() {
-      if (this.item >= this.carouselLinks.length) {
+      if (this.item >= this.bannerLinks.length) {
         this.item = 0;
-        this.currentLink = this.carouselLinks[this.item];
+        this.currentBannerLink = this.bannerLinks[this.item];
         this.item += 1;
       } else {
-        this.currentLink = this.carouselLinks[this.item];
+        this.currentBannerLink = this.bannerLinks[this.item];
         this.item += 1;
       }
     },

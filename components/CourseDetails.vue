@@ -59,12 +59,17 @@
                 >
               </li>
               <li>
-                <a class="" role="tab" data-toggle="tab" href="#curriculum"
-                  >Curriculum</a
+                <a class="" role="tab" data-toggle="tab" href="#Eligibility"
+                  >Eligibility</a
                 >
               </li>
               <li>
-                <a class="" role="tab" data-toggle="tab" href="#review"
+                <a class="" role="tab" data-toggle="tab" href="#examPattern"
+                  >Exam Pattern
+                </a>
+              </li>
+              <li>
+                <a class="" role="tab" data-toggle="tab" href="#testPaper"
                   >Test Paper</a
                 >
               </li>
@@ -87,22 +92,38 @@
 
                 <!-- /.list-unstyled course-details__overview-list -->
               </div>
+              <div
+                class="tab-pane show active animated fadeInUp"
+                role="tabpanel"
+                id="examPattern"
+              >
+                <p class="course-details__tab-text">
+                  {{ course.Pattern }}
+                </p>
+                <!-- /.course-details__tab-text -->
+                <br />
+
+                <!-- /.course-details__tab-text -->
+                <br />
+
+                <!-- /.list-unstyled course-details__overview-list -->
+              </div>
               <!-- /.course-details__tab-content -->
               <div
                 class="tab-pane animated fadeInUp"
                 role="tabpanel"
-                id="curriculum"
+                id="Eligibility"
               >
                 <!-- /.course-details__title -->
                 <br />
                 <p class="course-details__tab-text">
-                  {{ course.Curriculum }}
+                  {{ course.Eligibility }}
                 </p>
                 <!-- /.course-details__tab-text -->
                 <br />
-                <!-- <ul class="course-details__curriculum-list list-unstyled">
+                <!-- <ul class="course-details__Eligibility-list list-unstyled">
                   <li>
-                    <div class="course-details__curriculum-list-left">
+                    <div class="course-details__Eligibility-list-left">
                       <div class="course-details__meta-icon video-icon">
                         <i class="fas fa-play"></i
                         >
@@ -112,13 +133,13 @@
                       <span>Preview</span>
                     </div>
                     
-                    <div class="course-details__curriculum-list-right">
+                    <div class="course-details__Eligibility-list-right">
                       16 minutes
                     </div>
                     
                   </li>
                   <li>
-                    <div class="course-details__curriculum-list-left">
+                    <div class="course-details__Eligibility-list-left">
                       <div class="course-details__meta-icon video-icon">
                         <i class="fas fa-play"></i
                         >
@@ -127,13 +148,13 @@
                       <a href="#">Overview of Editing</a> <span>Preview</span>
                     </div>
                     
-                    <div class="course-details__curriculum-list-right">
+                    <div class="course-details__Eligibility-list-right">
                       10 minutes
                     </div>
                     
                   </li>
                   <li>
-                    <div class="course-details__curriculum-list-left">
+                    <div class="course-details__Eligibility-list-left">
                       <div class="course-details__meta-icon file-icon">
                         <i class="fas fa-folder"></i
                         >
@@ -145,7 +166,7 @@
                     
                   </li>
                   <li>
-                    <div class="course-details__curriculum-list-left">
+                    <div class="course-details__Eligibility-list-left">
                       <div class="course-details__meta-icon quiz-icon">
                         <i class="fas fa-comment"></i
                         >
@@ -154,7 +175,7 @@
                       <a href="#">Quiz</a>
                     </div>
                     
-                    <div class="course-details__curriculum-list-right">
+                    <div class="course-details__Eligibility-list-right">
                       6 questions
                     </div>
                 
@@ -163,13 +184,13 @@
 
                 <br /><br />
 
-                <!-- /.course-details__curriculum-list -->
+                <!-- /.course-details__Eligibility-list -->
               </div>
               <!-- /.course-details__tab-content -->
               <div
                 class="tab-pane animated fadeInUp"
                 role="tabpanel"
-                id="review"
+                id="testPaper"
               >
                 <div>
                   <h1>Test Papers</h1>
