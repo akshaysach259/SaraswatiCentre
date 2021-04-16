@@ -84,7 +84,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/axios.js", "~plugins/vue-js-modal.js"],
+  plugins: [
+    "~/plugins/axios.js",
+    "~plugins/vue-js-modal.js",
+    "~/plugins/vue-awesome-swiper"
+  ],
   /*
    ** Nuxt.js dev-modules
    */

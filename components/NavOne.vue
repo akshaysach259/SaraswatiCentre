@@ -61,7 +61,6 @@
 
             <!-- /.header__social -->
             <button
-              @click="showMenu()"
               class="menu-toggler topbar-one__right"
               data-target=".main-navigation"
             >

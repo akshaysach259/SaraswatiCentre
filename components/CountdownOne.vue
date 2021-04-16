@@ -16,9 +16,9 @@
               from an aspirant to a national achiever.
             </p>
             <!-- /.countdown-one__text -->
-            <ul class="countdown-one__list list-unstyled">
-              <!-- content loading via js -->
-            </ul>
+            <!-- <ul class="countdown-one__list list-unstyled"> -->
+            <!-- content loading via js -->
+            <!-- </ul> -->
             <!-- /.coundown-one__list -->
           </div>
           <!-- /.countdown-one__content -->

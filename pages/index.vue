@@ -6,7 +6,7 @@
     <AboutTwo />
     <CourseOne />
     <CountdownOne />
-    <BannerThreeSecond />
+    <SwipperBanner />
     <BlogCarousel />
 
     <Testimonial />
@@ -18,7 +18,7 @@
 import VideoOne from "../components/VideoOne";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
-import BannerThreeSecond from "../components/BannerThreeSecond";
+import SwipperBanner from "../components/SwipperBanner";
 import AboutTwo from "../components/AboutTwo";
 import BannerThree from "../components/BannerThree";
 import CourseCatTwo from "../components/CourseCatTwo";
@@ -41,7 +41,7 @@ export default {
     Footer,
     NavOne,
     CourseCategory,
-    BannerThreeSecond,
+    SwipperBanner,
     AboutTwo,
     BannerThree,
     CourseOne,

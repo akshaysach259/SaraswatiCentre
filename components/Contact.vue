@@ -94,33 +94,57 @@
           Get in touch <br />
           with us
         </h2>
+        <p ref="success" class="success"></p>
+        <p ref="error" class="error"></p>
         <!-- /.contact-one__title -->
         <form
-          action="/assets/inc/sendemail.php"
+          v-on:submit.prevent="submitContactForm"
           class="contact-one__form contact-form-validated"
           novalidate="novalidate"
         >
           <div class="row low-gutters">
             <div class="col-lg-6">
-              <input type="text" name="name" placeholder="Your Name" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                v-model="name"
+              />
             </div>
             <div class="col-lg-6">
-              <input type="text" name="name" placeholder="Your Mobile Number" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Mobile Number"
+                v-model="phone"
+              />
             </div>
             <div class="col-lg-6">
-              <input type="text" name="name" placeholder="Your Address" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Address"
+                v-model="address"
+              />
             </div>
             <!-- /.col-lg-6 -->
             <div class="col-lg-6">
-              <input type="text" placeholder="Email Address" name="email" />
+              <input
+                type="text"
+                placeholder="Email Address"
+                name="email"
+                v-model="email"
+              />
             </div>
             <!-- /.col-lg-6 -->
             <div class="col-lg-12">
-              <textarea placeholder="Write Message" name="message"></textarea>
+              <textarea
+                placeholder="Write Message"
+                name="message"
+                v-model="message"
+              ></textarea>
               <div class="text-center">
-                <button type="submit" class="contact-one__btn thm-btn">
-                  Submit Comment
-                </button>
+                <button class="contact-one__btn thm-btn">Submit Message</button>
               </div>
               <!-- /.text-center -->
             </div>
@@ -144,10 +168,57 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Contact",
+  data() {
+    return {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      address: "",
+    };
+  },
+  methods: {
+    async submitContactForm() {
+      axios
+        .post("https://admin.saraswaticentre.com/contact-forms", {
+          name: this.name,
+          phone: this.phone,
+          address: this.address,
+          email: this.email,
+          message: this.message,
+        })
+        .then((response) => {
+          if (response.status < 300) {
+            this.$refs.success.innerHTML =
+              "Thanks! We will Contact you shortly";
+            this.name = "";
+            this.email = "";
+            this.phone = "";
+            this.message = "";
+            this.address = "";
+          } else {
+            this.$refs.error.innerHTML = "Sorry! Please Try Again";
+            this.name = "";
+            this.email = "";
+            this.phone = "";
+            this.message = "";
+            this.address = "";
+          }
+        });
+    },
+  },
 };
 </script>
 
 <style scoped>
+.success {
+  color: #28a745;
+}
+.error {
+  color: red;
+}
 </style>

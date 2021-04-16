@@ -2,7 +2,11 @@
   <section class="course-category-two">
     <div class="container text-center">
       <div class="inner-container">
-        <marquee>{{ MarqueeText }}<a :href="`${Link}`"> Learn more</a></marquee>
+        <marquee
+          ><a :href="`${Link}`" class="marqueeText">
+            {{ MarqueeText }}
+          </a></marquee
+        >
         <div class="course-category-two__carousel owl-carousel owl-theme">
           <div class="item" href="/courses">
             <a href="/courses">
@@ -14,7 +18,7 @@
                 </div>
                 <!-- /.course-category-two__icon -->
                 <h3 class="course-category-two__title">
-                  <a href="#">SBI Clerk</a>
+                  <a href="/courses">SBI Clerk</a>
                 </h3>
                 <!-- /.course-category-two__title -->
               </div>
@@ -29,7 +33,7 @@
                 </div>
                 <!-- /.course-category-two__icon -->
                 <h3 class="course-category-two__title">
-                  <a href="#">IBPS Clerk</a>
+                  <a href="/courses">IBPS Clerk</a>
                 </h3>
                 <!-- /.course-category-two__title -->
               </div>
@@ -48,7 +52,7 @@
                 </div>
                 <!-- /.course-category-two__icon -->
                 <h3 class="course-category-two__title">
-                  <a href="#">SBI PO</a>
+                  <a href="/courses">SBI PO</a>
                 </h3>
                 <!-- /.course-category-two__title -->
               </div>
@@ -67,7 +71,7 @@
                 </div>
                 <!-- /.course-category-two__icon -->
                 <h3 class="course-category-two__title">
-                  <a href="#">IBPS PO</a>
+                  <a href="/courses">IBPS PO</a>
                 </h3>
                 <!-- /.course-category-two__title -->
               </div>
@@ -82,7 +86,9 @@
                   <!-- /.kipso-icon-camera -->
                 </div>
                 <!-- /.course-category-two__icon -->
-                <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
+                <h3 class="course-category-two__title">
+                  <a href="/courses">GDPI</a>
+                </h3>
                 <!-- /.course-category-two__title -->
               </div>
             </a>
@@ -97,7 +103,7 @@
                 </div>
                 <!-- /.course-category-two__icon -->
                 <h3 class="course-category-two__title">
-                  <a href="#">IBPS Clerk</a>
+                  <a href="/courses">IBPS Clerk</a>
                 </h3>
                 <!-- /.course-category-two__title -->
               </div>
@@ -113,7 +119,9 @@
                   <!-- /.kipso-icon-camera -->
                 </div>
                 <!-- /.course-category-two__icon -->
-                <h3 class="course-category-two__title"><a href="#">GDPI</a></h3>
+                <h3 class="course-category-two__title">
+                  <a href="/courses">GDPI</a>
+                </h3>
                 <!-- /.course-category-two__title -->
               </div>
             </a>
@@ -173,4 +181,7 @@ export default {
 </script>
 
 <style scoped>
+.marqueeText {
+  color: #81868a;
+}
 </style>
