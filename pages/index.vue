@@ -8,7 +8,6 @@
     <CountdownOne />
     <SwipperBanner />
     <BlogCarousel />
-
     <Testimonial />
     <CallToActionFive />
     <Footer />
@@ -65,7 +64,7 @@ export default {
   },
   head() {
     return {
-      title: "SaraswatiCentre | Home 3",
+      title: "SaraswatiCentre | Home",
     };
   },
 };

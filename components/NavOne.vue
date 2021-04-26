@@ -40,8 +40,10 @@
 
             <div class="topbar-one__right">
               <div class="header__social">
-                <a href="https://t.me/saraswaticentre" target="_blank"
-                  ><i class="fab fa-telegram"></i
+              <a
+                  href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
                 ></a>
                 <a
                   href="https://www.facebook.com/Saraswati-Centre-Gurgaon-107313917896620"
@@ -51,10 +53,8 @@
                 <a href="https://saraswaticentre.blogspot.com/" target="_blank"
                   ><i class="fab fa-blogger"></i
                 ></a>
-                <a
-                  href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
-                  target="_blank"
-                  ><i class="fab fa-youtube"></i
+                <a href="https://t.me/saraswaticentre" target="_blank"
+                  ><i class="fab fa-telegram"></i
                 ></a>
               </div>
             </div>
@@ -134,10 +134,6 @@
                 <a href="#">Resources</a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
-                    <!-- /.sub-menu -->
-                  </li>
-                  <li>
                     <nuxt-link to="/PreviousQuestions"
                       >Previous Year Questions</nuxt-link
                     >
@@ -145,6 +141,10 @@
                 </ul>
                 <!-- /.sub-menu -->
               </li>
+              <li>
+                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
+                    <!-- /.sub-menu -->
+                  </li>
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
               </li>
