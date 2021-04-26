@@ -249,7 +249,7 @@
                 <i class="far fa-clock"></i
                 ><!-- /.far fa-clock --> </span
               ><!-- /.course-details__icon -->
-              Durations: <span>{{ course.Duration }} hours</span> </a
+              Durations: <span>{{ course.Duration }}</span> </a
             ><!-- /.course-details__meta-link -->
             <a href="#" class="course-details__meta-link">
               <span class="course-details__meta-icon">
