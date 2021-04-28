@@ -21,6 +21,7 @@
             <!-- </ul> -->
             <!-- /.coundown-one__list -->
           </div>
+
           <!-- /.countdown-one__content -->
         </div>
         <!-- /.col-lg-6 -->
@@ -127,5 +128,18 @@ export default {
 }
 .error {
   color: red;
+}
+.current-affairs {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f1f1f1;
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+li {
+  list-style-type: none;
 }
 </style>

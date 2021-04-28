@@ -4,6 +4,7 @@
     <BannerThree />
     <CourseCatTwo />
     <AboutTwo />
+    <CurrentAffairs />
     <CourseOne />
     <CountdownOne />
     <SwipperBanner />
@@ -14,6 +15,7 @@
   </div>
 </template>
 <script>
+import CurrentAffairs from "../components/CurrentAffairs";
 import VideoOne from "../components/VideoOne";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
@@ -36,6 +38,7 @@ import CourseCategory from "../components/CourseCategory";
 
 export default {
   components: {
+    CurrentAffairs,
     VideoOne,
     Footer,
     NavOne,

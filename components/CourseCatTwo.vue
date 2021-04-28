@@ -2,11 +2,13 @@
   <section class="course-category-two">
     <div class="container text-center">
       <div class="inner-container">
-        <marquee
-          ><a :href="`${Link}`" class="marqueeText">
-            {{ MarqueeText }}
-          </a></marquee
-        >
+        <marquee>
+          <span v-for="Marquee in Marquees" :key="Marquee.id">
+            <a class="marqueeText" :href="`${Marquee.Link}`">{{
+              Marquee.Text
+            }}</a>
+          </span>
+        </marquee>
         <div class="course-category-two__carousel owl-carousel owl-theme">
           <div class="item" href="/courses">
             <a href="/courses">
@@ -148,8 +150,7 @@ export default {
   data() {
     return {
       URL: "https://admin.saraswaticentre.com",
-      MarqueeText: "",
-      Link: "",
+      Marquees: [],
       courses: null,
     };
   },
@@ -160,8 +161,7 @@ export default {
   methods: {
     async loadMarqueeText() {
       axios.get(this.URL + "/Marquees").then((response) => {
-        this.MarqueeText = response.data[0].Text;
-        this.Link = response.data[0].Link;
+        this.Marquees = response.data;
       });
     },
     async loadCourses() {
@@ -182,6 +182,7 @@ export default {
 
 <style scoped>
 .marqueeText {
-  color: #81868a;
+  color: #606366;
+  margin-right: 40px;
 }
 </style>
