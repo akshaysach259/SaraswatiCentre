@@ -21,7 +21,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/clerk.jpg" alt="" />
+                <img src="/assets/images/courses/sbi_clerk.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -30,7 +30,7 @@
                 <a href="#" class="course-one__category">SBI</a
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
-                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  <img src="/assets/images/icons/user.png" alt="" />
                   by <a href="/teacher-details">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
@@ -60,7 +60,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -70,7 +70,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>
@@ -94,7 +94,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/ibps_po.jpg" alt="" />
+                <img src="/assets/images/courses/ibps_po.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -103,7 +103,7 @@
                 <a href="#" class="course-one__category">Banking</a
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
-                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  <img src="/assets/images/icons/user.png" alt="" />
                   by <a href="/teacher-details">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
@@ -132,7 +132,7 @@
                     }"
                   >
                     <a href="/course-details/2"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -141,7 +141,7 @@
                     }"
                   >
                     <a href="/course-details/2"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>
@@ -164,7 +164,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/ibps_po.jpg" alt="" />
+                <img src="/assets/images/courses/sbi_po.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -173,7 +173,7 @@
                 <a href="#" class="course-one__category">Banking</a
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
-                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  <img src="/assets/images/icons/user.png" alt="" />
                   by <a href="#">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
@@ -202,7 +202,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -211,7 +211,7 @@
                     }"
                   >
                     <a href="#"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>
@@ -234,7 +234,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/ibps_clerk.jpg" alt="" />
+                <img src="/assets/images/courses/ibps_clerk.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -243,7 +243,7 @@
                 <a href="#" class="course-one__category">Banking</a
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
-                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  <img src="/assets/images/icons/user.png" alt="" />
                   by <a href="">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
@@ -272,7 +272,7 @@
                     }"
                   >
                     <a href="/course-details/4"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -281,7 +281,7 @@
                     }"
                   >
                     <a href="/course-details/4"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>
@@ -304,7 +304,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/ibps_po.jpg" alt="" />
+                <img src="/assets/images/courses/gdpi.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -342,7 +342,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -351,7 +351,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>
@@ -374,7 +374,7 @@
           <div class="item">
             <div class="course-one__single color-1">
               <div class="course-one__image">
-                <img src="/assets/images/courses/sbi_clerk.jpg" alt="" />
+                <img src="/assets/images/courses/sbi_po.png" alt="" />
                 <i class="far fa-heart"></i
                 ><!-- /.far fa-heart -->
               </div>
@@ -383,7 +383,7 @@
                 <a href="#" class="course-one__category">Banking</a
                 ><!-- /.course-one__category -->
                 <div class="course-one__admin">
-                  <img src="/assets/images/icons/admin.jpg" alt="" />
+                  <img src="/assets/images/icons/user.png" alt="" />
                   by <a href="#">Admin</a>
                 </div>
                 <!-- /.course-one__admin -->
@@ -412,7 +412,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Ebook</a
+                      ><i class="far fa-folder-open"></i> Ebooks</a
                     ></nuxt-link
                   >
                   <nuxt-link
@@ -421,7 +421,7 @@
                     }"
                   >
                     <a href="/course-details"
-                      ><i class="far fa-folder-open"></i> Mock Test</a
+                      ><i class="far fa-folder-open"></i> Mock Tests</a
                     ></nuxt-link
                   >
                 </div>

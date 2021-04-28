@@ -40,7 +40,7 @@
 
             <div class="topbar-one__right">
               <div class="header__social">
-              <a
+                <a
                   href="	https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
                   target="_blank"
                   ><i class="fab fa-youtube"></i
@@ -131,6 +131,9 @@
                 <!-- /.sub-menu -->
               </li>
               <li>
+                <a href="https://saraswati.trigrexam.com/">Test Series</a>
+              </li>
+              <li>
                 <a href="#">Resources</a>
                 <ul class="sub-menu">
                   <li>
@@ -141,10 +144,10 @@
                 </ul>
                 <!-- /.sub-menu -->
               </li>
-              <li>
-                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
-                    <!-- /.sub-menu -->
-                  </li>
+              <!-- <li>
+                <nuxt-link to="/Testimonial">Testimonials</nuxt-link>
+              </li> -->
+
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>
               </li>

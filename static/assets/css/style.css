@@ -6086,6 +6086,11 @@ a:visited {
 .countdown-one__content {
   padding-top: 100px;
 }
+
+.current-notifications{
+  background-image: url(../images/patter-1-1.jpg);
+  
+}
 .countdown-one__title {
   margin: 0;
   color: #012237;
