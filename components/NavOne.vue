@@ -105,6 +105,9 @@
                 <!-- /.sub-menu -->
               </li>
               <li>
+                <a href="https://saraswati.trigrexam.com/">Test Series</a>
+              </li>
+              <!-- <li>
                 <a href="#">Resources</a>
                 <ul class="sub-menu">
                   <li>
@@ -112,21 +115,19 @@
                       >Previous Year Questions</nuxt-link
                     >
                   </li>
-                  <li>
-                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
-                  </li>
-                  <li>
-                    <nuxt-link to="/current-affairs">Current Affairs</nuxt-link>
-                  </li>
+                  
                 </ul>
-              </li>
+              </li> -->
 
               <li>
                 <a href="https://saraswati.trigrexam.com/">Store</a>
               </li>
               <li>
-                <nuxt-link to="/news">Blog</nuxt-link>
+                <nuxt-link to="/current-affairs">Current Affairs</nuxt-link>
               </li>
+              <!-- <li>
+                <nuxt-link to="/news">Blog</nuxt-link>
+              </li> -->
               <li>
                 <nuxt-link to="/Testimonials">Testimonials</nuxt-link>
               </li>

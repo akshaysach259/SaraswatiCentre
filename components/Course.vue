@@ -68,7 +68,7 @@
                     params: { id: course.id },
                   }"
                 >
-                  <i class="far fa-folder-open"></i> Mock Test</nuxt-link
+                  <i class="far fa-folder-open"></i> Mock Tests</nuxt-link
                 >
               </div>
               <!-- /.course-one__meta -->
