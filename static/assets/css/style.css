@@ -388,7 +388,7 @@ a:visited {
 .header-navigation .main-navigation {
   float: none;
   text-align: right;
-  padding-right: 90px;
+  padding-right: 5px;
 }
 @media (min-width: 1200px) {
   .header-navigation .main-navigation {

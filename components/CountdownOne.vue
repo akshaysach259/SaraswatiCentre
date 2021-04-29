@@ -81,6 +81,7 @@
 
 <script>
 import axios from "axios";
+import emailjs from "emailjs-com";
 
 export default {
   name: "CountdownOne",
@@ -93,7 +94,7 @@ export default {
     };
   },
   methods: {
-    async submitForm() {
+    async submitForm(e) {
       axios
         .post("https://admin.saraswaticentre.com/user-data", {
           name: this.name,
@@ -105,18 +106,59 @@ export default {
           if (response.status < 300) {
             this.$refs.success.innerHTML =
               "Thanks! We will Contact you shortly";
-            this.name = "";
-            this.email = "";
-            this.phone = "";
-            this.message = "";
+            this.sendEmailUser(e);
+            this.sendEmailSaraswatiCentre(e);
           } else {
             this.$refs.error.innerHTML = "Sorry! Please Try Again";
-            this.name = "";
-            this.email = "";
-            this.phone = "";
-            this.message = "";
           }
         });
+    },
+    sendEmailUser(e) {
+      try {
+        console.log();
+        emailjs.sendForm(
+          "service_var7dv8",
+          "template_ydc0l66",
+          e.target,
+          "user_zHMIs3jW2edcB8M3adYf9",
+          {
+            phone: this.phone,
+            message: this.message,
+            from_name: this.name,
+            email: this.email,
+          }
+        );
+      } catch (error) {
+        console.log({ error });
+      }
+    },
+    sendEmailSaraswatiCentre(e) {
+      try {
+        console.log();
+        emailjs
+          .sendForm(
+            "service_var7dv8",
+            "template_svsjpql",
+            e.target,
+            "user_zHMIs3jW2edcB8M3adYf9",
+            {
+              phone: this.phone,
+              message: this.message,
+              from_name: this.name,
+              email: this.email,
+            }
+          )
+          .then((result) => {
+            console.log(result, result.status);
+          });
+        this.name = "";
+        this.email = "";
+        this.phone = "";
+        this.message = "";
+        this.address = "";
+      } catch (error) {
+        console.log({ error });
+      }
     },
   },
 };

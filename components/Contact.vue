@@ -113,8 +113,8 @@
             </div>
             <div class="col-lg-6">
               <input
-                type="text"
-                name="name"
+                type="number"
+                name="phone"
                 placeholder="Your Mobile Number"
                 v-model="phone"
               />
@@ -122,7 +122,7 @@
             <div class="col-lg-6">
               <input
                 type="text"
-                name="name"
+                name="address"
                 placeholder="Your Address"
                 v-model="address"
               />
@@ -130,7 +130,7 @@
             <!-- /.col-lg-6 -->
             <div class="col-lg-6">
               <input
-                type="text"
+                type="email"
                 placeholder="Email Address"
                 name="email"
                 v-model="email"
@@ -169,7 +169,7 @@
 
 <script>
 import axios from "axios";
-
+import emailjs from "emailjs-com";
 export default {
   name: "Contact",
   data() {
@@ -182,7 +182,7 @@ export default {
     };
   },
   methods: {
-    async submitContactForm() {
+    async submitContactForm(e) {
       axios
         .post("https://admin.saraswaticentre.com/contact-forms", {
           name: this.name,
@@ -192,23 +192,62 @@ export default {
           message: this.message,
         })
         .then((response) => {
+          this.sendEmailUser(e);
+          this.sendEmailSaraswatiCentre(e);
           if (response.status < 300) {
             this.$refs.success.innerHTML =
               "Thanks! We will Contact you shortly";
-            this.name = "";
-            this.email = "";
-            this.phone = "";
-            this.message = "";
-            this.address = "";
           } else {
             this.$refs.error.innerHTML = "Sorry! Please Try Again";
-            this.name = "";
-            this.email = "";
-            this.phone = "";
-            this.message = "";
-            this.address = "";
           }
         });
+    },
+    sendEmailUser(e) {
+      try {
+        console.log();
+        emailjs.sendForm(
+          "service_var7dv8",
+          "template_ydc0l66",
+          e.target,
+          "user_zHMIs3jW2edcB8M3adYf9",
+          {
+            phone: this.phone,
+            message: this.message,
+            from_name: this.name,
+            email: this.email,
+          }
+        );
+      } catch (error) {
+        console.log({ error });
+      }
+    },
+    sendEmailSaraswatiCentre(e) {
+      try {
+        console.log();
+        emailjs
+          .sendForm(
+            "service_var7dv8",
+            "template_svsjpql",
+            e.target,
+            "user_zHMIs3jW2edcB8M3adYf9",
+            {
+              phone: this.phone,
+              message: this.message,
+              from_name: this.name,
+              email: this.email,
+            }
+          )
+          .then((result) => {
+            console.log(result, result.status);
+          });
+        this.name = "";
+        this.email = "";
+        this.phone = "";
+        this.message = "";
+        this.address = "";
+      } catch (error) {
+        console.log({ error });
+      }
     },
   },
 };
