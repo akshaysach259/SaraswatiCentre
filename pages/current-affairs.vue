@@ -1,8 +1,8 @@
 <template>
   <div>
     <NavOne />
-    <PageHeader title="Testimonials" img="assets/images/contactus.png" />
-    <TestimonialPage />
+    <PageHeader title="News" img="assets/images/contactus.png" />
+    <CurrentAffairPage />
     <Footer />
   </div>
 </template>
@@ -10,6 +10,7 @@
 
 <script>
 import NavOne from "../components/NavOne";
+import CurrentAffairPage from "../components/CurrentAffairPage";
 import Footer from "../components/Footer";
 import TestimonialPage from "../components/TestimonialPage";
 import PageHeader from "../components/PageHeader";
@@ -19,12 +20,13 @@ export default {
     Footer,
     TestimonialPage,
     PageHeader,
+    CurrentAffairPage,
   },
   head() {
     return {
-      title: "SaraswatiCentre | Testimonials",
+      title: "SaraswatiCentre | Current Affairs",
     };
   },
-  name: "Testimonials",
+  name: "current-affairs",
 };
 </script>

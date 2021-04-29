@@ -104,35 +104,6 @@
                 </ul>
                 <!-- /.sub-menu -->
               </li>
-
-              <li>
-                <a href="https://saraswati.trigrexam.com/">Store</a>
-                <!-- <ul class="sub-menu">
-                  <li><nuxt-link to="/teachers">Teachers</nuxt-link></li>
-                  <li>
-                    <nuxt-link to="/teacher-details"
-                      >Teachers Details</nuxt-link
-                    >
-                  </li>
-                  <li>
-                    <nuxt-link to="/become-teacher">Become Teacher</nuxt-link>
-                  </li>
-                </ul> -->
-                <!-- /.sub-menu -->
-              </li>
-              <li>
-                <nuxt-link to="/news">Blog</nuxt-link>
-                <!-- <ul class="sub-menu">
-                  <li><nuxt-link to="/news">News Page</nuxt-link></li>
-                  <li>
-                    <nuxt-link to="/news-details">News Details</nuxt-link>
-                  </li>
-                </ul> -->
-                <!-- /.sub-menu -->
-              </li>
-              <li>
-                <a href="https://saraswati.trigrexam.com/">Test Series</a>
-              </li>
               <li>
                 <a href="#">Resources</a>
                 <ul class="sub-menu">
@@ -141,12 +112,24 @@
                       >Previous Year Questions</nuxt-link
                     >
                   </li>
+                  <li>
+                    <a href="https://saraswati.trigrexam.com/">Test Series</a>
+                  </li>
+                  <li>
+                    <nuxt-link to="/current-affairs">Current Affairs</nuxt-link>
+                  </li>
                 </ul>
-                <!-- /.sub-menu -->
               </li>
-              <!-- <li>
-                <nuxt-link to="/Testimonial">Testimonials</nuxt-link>
-              </li> -->
+
+              <li>
+                <a href="https://saraswati.trigrexam.com/">Store</a>
+              </li>
+              <li>
+                <nuxt-link to="/news">Blog</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/Testimonials">Testimonials</nuxt-link>
+              </li>
 
               <li>
                 <nuxt-link to="/contact">Contact</nuxt-link>

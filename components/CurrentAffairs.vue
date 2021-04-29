@@ -4,7 +4,9 @@
       <div class="col-lg-8">
         <h1 class="text-center current-affairs-heading">Current Affairs</h1>
         <ul class="capsule-pill" id="style-2">
-          <span class="see-more">See More</span>
+          <nuxt-link to="/current-affairs">
+            <span class="see-more">See More</span>
+          </nuxt-link>
           <div class="current-affairs">
             <div
               class="capsule-container"
