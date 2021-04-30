@@ -10,7 +10,7 @@
             v-for="currentaffair in CurrentAffairs"
             :key="currentaffair.id"
           >
-            <a :href="`${currentaffair.Link}`" target="_blank">
+            <a :href="`current-affair-details/${currentaffair.id}`">
               <li>
                 <div class="capsule">
                   <div class="mr-4 ml-4 capusle-date">

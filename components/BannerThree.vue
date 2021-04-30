@@ -45,7 +45,7 @@ export default {
             if ($(".slider-three").length) {
               $(".slider-three").vegas({
                 slides: this.carousels,
-                transition: "slideRight2",
+                transition: "slideLeft2",
                 timer: false,
                 overlay: false,
                 delay: 4000,
@@ -74,7 +74,7 @@ export default {
             if ($(".slider-three").length) {
               $(".slider-three").vegas({
                 slides: this.carousels,
-                transition: "slideRight2",
+                transition: "slideLeft2",
                 timer: false,
                 overlay: false,
               });

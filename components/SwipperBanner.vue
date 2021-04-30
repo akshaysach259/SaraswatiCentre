@@ -2,7 +2,7 @@
   <div>
     <swiper ref="mySwiper" :options="swiperOptions">
       <swiper-slide v-for="banner in banners" :key="banner.id">
-        <div class="container" v-if="isMobile">
+        <div class="" v-if="isMobile">
           <a :href="`${banner.Link}`">
             <img
               :src="
@@ -13,7 +13,7 @@
             />
           </a>
         </div>
-        <div class="container" v-else>
+        <div class="" v-else>
           <a :href="`${banner.Link}`">
             <img
               :src="
