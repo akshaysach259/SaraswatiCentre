@@ -20,9 +20,7 @@
       <p class="cta-five__text">Engage with us & Enhance your self</p>
 
       <!-- /.cta-five__text -->
-      <a
-        href="https://www.youtube.com/channel/UCKnIejuld8lPedL4ZvH5RvQ"
-        class="thm-btn cta-five__btn"
+      <a href="/freeLearning" class="thm-btn cta-five__btn"
         >Start Free Learning</a
       ><!-- /.thm-btn cta-five__btn -->
     </div>
